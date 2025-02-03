@@ -6,10 +6,11 @@
 ## Tech Stack
 
 - HTML5
-- React.JS
-- React Router
 - CSS with CSS Modules
 - TypeScript
+- React.JS
+- React Router
+- Vite
 
 ## Getting Started
 
