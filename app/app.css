@@ -1,15 +1,20 @@
 @import "tailwindcss";
-
-@theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
+@import "https://unpkg.com/open-props/easings.min.css";
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  background-color: var(--background-color);
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+  font-family: var(--font-sans);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px auto;
+  margin: 0;
 }
