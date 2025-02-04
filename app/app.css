@@ -8,8 +8,22 @@ body {
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+  @media (prefers-color-scheme: dark) {
+    color: aqua;
+  }
   font-family: var(--font-sans);
+  font-size: 62.5%;
 }
+
+html[data-theme="dark"] body {
+  background: var(--background-dark-color);
+  outline: 5px dashed #000;
+}
+
+html[data-theme="dark"] header {
+  background: var(--nav-dark-color);
+}
+
 .container {
   display: flex;
   justify-content: center;

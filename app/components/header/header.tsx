@@ -1,15 +1,24 @@
 import styles from "./header.module.css";
-import { ThemeToggleButton } from "../buttons/themeToggleButton";
+import { ThemeToggle } from "../buttons/themeToggle";
+
+const getTime = () => {
+  const date = new Date();
+  const localDate = date.getTime();
+  console.log(localDate.toString());
+};
+
+const logSomething = () => {};
 
 export function Header() {
   return (
     <header className={styles.header}>
+      <ThemeToggle></ThemeToggle>
+      <button onClick={logSomething}>Clickkkme</button>
       <h3>Lublin, Poland</h3>
-      <ul className="landingPage-languageSelect">
+      <ul>
         <li>Polski,</li>
         <li>English</li>
       </ul>
-      <ThemeToggleButton></ThemeToggleButton>
       <nav>
         <ul>
           <li>Home</li>
