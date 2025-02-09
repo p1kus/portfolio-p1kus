@@ -2,7 +2,7 @@
 
 @import "tailwindcss";
 
-@theme {
+:root {
   --font-sans: "Helvetica";
   --primary-accent: #9f2ff5;
   --secondary-color: #cddc38;

@@ -1,19 +1,12 @@
-import { Header } from "./components/header/header";
 import { Main } from "./components/main/main";
-import { Footer } from "./components/footer/footer";
-import { ThemeProvider, useTheme } from "./ThemeContext";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route, Outlet } from "react-router";
+import { useTheme } from "./ThemeContext";
+import { Routes, Route, Outlet } from "react-router";
 import "./globals.css";
+import "./app.css"
 import Demos from "./routes/demos";
 import About from "./routes/about";
 import Contact from "./routes/contact";
 
-// export function App() {
-//   return (
-//     <ThemeProvider><Layout></Layout></ThemeProvider>
-//   )
-// }
 export function App() {
   return (
     <Routes>
@@ -28,7 +21,6 @@ export function App() {
 }
 
 const Layout = () => {
-  const { theme } = useTheme();
   return (
     <Outlet></Outlet>
   );

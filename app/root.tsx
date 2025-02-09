@@ -21,7 +21,6 @@ export const links: Route.LinksFunction = () => [
 ];
 
 export function Layout() {
-  const { theme } = useTheme();
   return (
     <html lang="en">
       <head>
