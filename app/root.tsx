@@ -1,8 +1,11 @@
-import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
+import { isRouteErrorResponse, Links, Meta, Outlet, BrowserRouter, Scripts, ScrollRestoration } from "react-router";
 
 import type { Route } from "./+types/root";
 import "./globals.css";
 import "./app.css";
+import { Footer } from "./components/footer/footer";
+import { Header } from "./components/header/header";
+import { ThemeProvider, useTheme } from "./ThemeContext";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -17,7 +20,8 @@ export const links: Route.LinksFunction = () => [
   },
 ];
 
-export function Layout({ children }: { children: React.ReactNode }) {
+export function Layout() {
+  const { theme } = useTheme();
   return (
     <html lang="en">
       <head>
@@ -27,17 +31,28 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        {children}
+        <ThemeProvider>
+          <ThemedLayout></ThemedLayout>
+        </ThemeProvider>
         <ScrollRestoration />
         <Scripts />
       </body>
-    </html>
+    </html >
   );
+}
+function ThemedLayout() {
+  const { theme } = useTheme();
+  return (<div className={theme === 'light' ? 'dark' : 'light'}>
+    <Header></Header>
+    <Outlet></Outlet>
+    <Footer></Footer>
+  </ div>)
 }
 
 export default function App() {
-  return <Outlet />;
+  return <Outlet></Outlet>
 }
+
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   let message = "Oops!";

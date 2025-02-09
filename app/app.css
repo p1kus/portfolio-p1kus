@@ -1,27 +1,20 @@
 @import "tailwindcss";
-@import "https://unpkg.com/open-props/easings.min.css";
 
 html,
 body {
   background-color: var(--background-color);
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
-  @media (prefers-color-scheme: dark) {
-    color: aqua;
-  }
   font-family: var(--font-sans);
   font-size: 62.5%;
 }
 
-html[data-theme="dark"] body {
-  background: var(--background-dark-color);
-  outline: 5px dashed #000;
+.dark {
+  background-color: var(--background-dark-color);
+  color: white;
 }
 
-html[data-theme="dark"] header {
-  background: var(--nav-dark-color);
+.light {
+  background-color: var(--background-color);
+  color: black;
 }
 
 .container {

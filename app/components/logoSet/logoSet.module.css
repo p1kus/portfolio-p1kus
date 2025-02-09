@@ -1,0 +1,15 @@
+.logoSetContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  max-width: 450px;
+
+  .icon {
+    font-size: 58px;
+    margin-left: 12px;
+    padding: 8px
+  }
+
+}

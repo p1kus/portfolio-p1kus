@@ -1,0 +1,42 @@
+main {
+  display: flex;
+  justify-content: center;
+  /*align-items: center;*/
+  height: 95vh;
+  margin: 0 120px;
+
+  .leftContainer {
+    width: 50dvw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+
+    h1 {
+      font-size: 4rem;
+      /*padding: 10px;*/
+
+      span {
+        color: var(--primary-accent);
+      }
+    }
+
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 2.5rem;
+    }
+  }
+
+  .rightContainer {
+    margin-top: 80px;
+    width: 50dvw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+  }
+}
