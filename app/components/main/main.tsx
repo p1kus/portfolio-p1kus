@@ -23,6 +23,7 @@ export function Main() {
       <section className={styles.rightContainer}>
         <div className={styles.leftContent}>
           <ContactForm></ContactForm>
+          {/* <h2>What i'm currently working on:</h2> */}
         </div>
       </section>
     </main >

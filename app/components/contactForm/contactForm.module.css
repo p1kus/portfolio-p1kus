@@ -3,46 +3,50 @@ form {
   flex-direction: column;
   justify-content: center;
   padding: 25px;
-  /*align-items: center;*/
-  border: 1px solid var(--moon-color-hover);
+  /*border: 1px solid var(--dark-accent);*/
   border-radius: 10px;
 
   h2 {
-    font-size: 4rem;
-    /*padding: 10px 0;*/
+    font-size: 3.5rem;
     padding-bottom: 10px;
   }
 
-  input {
-    border: 1px solid var(--moon-color-hover);
+  input,
+  textarea {
+    /*border: 1px solid var(--background-dark-color);*/
     padding: 15px;
     margin: 5px 0;
     width: 400px;
-    border-radius: 4px;
+    border-radius: 8px;
     font-size: 2rem;
-  }
-
-  textarea {
-    border: 1px solid var(--moon-color-hover);
-    border-radius: 4px;
-    width: 400px;
-    height: 200px;
-    padding: 15px;
+    background-color: var(--moon-color-hover);
     resize: none;
-    font-size: 2rem;
-    /*border-radius: 10px;*/
   }
 
   button {
-    margin: 15px;
-    width: 120px;
-    height: 40px;
-    border: 3px solid var(--primary-accent);
-    border-radius: 50px;
-    font-size: 1.5rem;
-    font-weight: bold;
+    margin-top: 10px;
+    width: 50%;
     background-color: var(--primary-accent);
     color: white;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 1.8rem;
+    font-style: italic;
+    /*font-weight: bold;*/
+    padding: 4px;
+  }
+
+  .icon {
+    font-size: 2rem;
+    color: red;
+    position: relative;
+    bottom: 50px;
+    left: 350px;
+  }
+
+  .iconAltPos {
+    position: relative;
+    bottom: 80px;
   }
 
   ::placeholder {

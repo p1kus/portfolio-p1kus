@@ -1,4 +1,5 @@
 import React from "react";
+import { Icon } from "@iconify/react";
 import styles from "./contactForm.module.css";
 export default function ContactForm() {
   const [result, setResult] = React.useState("");
@@ -31,11 +32,18 @@ export default function ContactForm() {
     <div>
       <form onSubmit={onSubmit}>
         <h2>Get in touch!</h2>
-        <input type="text" name="name" required placeholder="Name" />
-        <input type="email" name="email" required placeholder="Your email" />
+        <div>
+          <input type="text" name="name" required placeholder="Name" />
+          <Icon className={styles.icon} icon="mdi:required" />
+        </div>
+        <div>
+          <input type="email" name="email" required placeholder="Your email" />
+          <Icon className={styles.icon} icon="mdi:required" />
+        </div>
         <textarea name="message" required placeholder="Your message" ></textarea>
+        <Icon className={`${styles.icon} ${styles.iconAltPos}`} icon="mdi:required" />
 
-        <button type="submit">Submit</button>
+        <button type="submit">Send Message</button>
 
       </form>
       <span>{result}</span>

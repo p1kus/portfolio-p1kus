@@ -3,11 +3,12 @@
 @import "tailwindcss";
 
 :root {
-  --font-sans: "Helvetica";
-  --primary-accent: #9f2ff5;
+  --font-sans: "Switzer";
+  --primary-accent: #40CB4F;
   --secondary-color: #cddc38;
   --background-color: #ffffff;
   --background-dark-color: #12111b;
+  --dark-accent: #171622;
   --border-grey: #e1e1e1;
   --nav-dark-color: #161622;
   --dark-text-color: #a7a9be;

@@ -1,14 +1,12 @@
 import type { Route } from "./+types/home";
-import { App } from "../app";
+import { AboutPage } from "~/components/aboutPage/aboutPage";
 
-export function meta({}: Route.MetaArgs) {
+export function meta({ }: Route.MetaArgs) {
   return [{ title: "Piotr Popiolek" }, { name: "description", content: "Portfolio Page" }];
 }
 
 export default function About() {
   return (
-    <>
-      <h2>About</h2>
-    </>
+    <AboutPage></AboutPage>
   );
 }

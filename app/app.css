@@ -18,6 +18,20 @@ body {
   color: black;
 }
 
+:global(.dark) input {
+  background-color: black;
+}
+
+
+.dark input {
+  background-color: var(--dark-accent);
+}
+
+.dark textarea {
+  background-color: var(--dark-accent);
+}
+
+
 .container {
   display: flex;
   justify-content: center;
