@@ -5,6 +5,8 @@ import { HorizontalLine } from "../horizontalLine/horizontalLine";
 import { LogoSet } from "../logoSet/logoSet";
 import styles from "./main.module.css";
 import { About } from "../about/about";
+import { Toolkit } from "../toolkit/toolkit";
+import { CurrentWorkText } from "../currentWorkText/currentWorkText";
 
 export function Main() {
   return (
@@ -23,9 +25,9 @@ export function Main() {
           </p>
           <p>
             Proficient in Adobe Creative Suite, with expertise in Photoshop, specializing in marketing materials and editing.
+            <CurrentWorkText name='CS2ETV' link=""></CurrentWorkText>
           </p>
           <p>
-
           </p>
           <div className={styles.buttonContainer}>
             <Button label="See my projects" variant="outlined"></Button>
@@ -40,8 +42,12 @@ export function Main() {
         <HorizontalLine></HorizontalLine>
       </section>
       <section>
+        <Toolkit></Toolkit>
+        {/* <LogoSet></LogoSet> */}
+        <HorizontalLine></HorizontalLine>
+      </section>
+      <section>
 
-        <LogoSet></LogoSet>
       </section>
       <section>
         <ContactForm></ContactForm>

@@ -1,5 +1,5 @@
 import styles from "./about.module.css"
-import map from "../../assets/map.png"
+import map from "../../assets/map5.png"
 import { HorizontalLine } from "../horizontalLine/horizontalLine"
 
 export function About() {
@@ -11,7 +11,7 @@ export function About() {
         <h4>Dev</h4>
         <li>Github</li>
         <li>Codepen</li>
-        <li>Linkedin</li>
+        <li>LinkedIn</li>
 
         {/* https://github.com/p1kus */}
         {/* https://codepen.io/p1kus */}

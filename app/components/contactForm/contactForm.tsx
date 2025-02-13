@@ -32,18 +32,17 @@ export default function ContactForm() {
     <div>
       <form onSubmit={onSubmit}>
         <h2>Get in touch!</h2>
-        <div>
-          <input type="text" name="name" required placeholder="Name" />
-          <Icon className={styles.icon} icon="mdi:required" />
-        </div>
-        <div>
-          <input type="email" name="email" required placeholder="Your email" />
-          <Icon className={styles.icon} icon="mdi:required" />
+        <div className={styles.firstRow}>
+          <input className={styles.nameInput} type="text" name="name" required placeholder="Name" />
+          {/* <Icon className={styles.icon} icon="mdi:required" /> */}
+          <input className={styles.emailInput} type="email" name="email" required placeholder="Your email" />
+          {/* <Icon className={styles.icon} icon="mdi:required" /> */}
         </div>
         <textarea name="message" required placeholder="Your message" ></textarea>
-        <Icon className={`${styles.icon} ${styles.iconAltPos}`} icon="mdi:required" />
-
-        <button type="submit">Send Message</button>
+        {/* <Icon className={`${styles.icon} ${styles.iconAltPos}`} icon="mdi:required" /> */}
+        <div className={styles.buttonWrapper}>
+          <button type="submit">SUBMIT <Icon className={styles.icon} icon="ic:baseline-email"></Icon></button>
+        </div>
 
       </form>
       <span>{result}</span>

@@ -2,6 +2,7 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 25px;
   /*border: 1px solid var(--dark-accent);*/
   border-radius: 10px;
@@ -11,50 +12,80 @@ form {
     padding-bottom: 10px;
   }
 
-  input,
   textarea {
-    /*border: 1px solid var(--background-dark-color);*/
+    border: 1px solid var(--text-light);
     padding: 15px;
-    margin: 5px 0;
-    width: 400px;
-    border-radius: 8px;
-    font-size: 2rem;
-    background-color: var(--moon-color-hover);
+    width: 600px;
+    height: 150px;
+    border-radius: 0px 0px 8px 8px;
+    font-size: 1.5rem;
     resize: none;
   }
 
-  button {
-    margin-top: 10px;
-    width: 50%;
-    background-color: var(--primary-accent);
-    color: white;
-    height: 40px;
-    border-radius: 8px;
+  input {
+    padding: 18px;
+    width: 300px;
+    border: 1px solid var(--text-light);
     font-size: 1.8rem;
-    font-style: italic;
-    /*font-weight: bold;*/
-    padding: 4px;
   }
 
-  .icon {
+  .nameInput {
+    border-radius: 6px 0px 0px 0px;
+    width: 200px;
+  }
+
+  .emailInput {
+    border-radius: 0px 6px 0px 0px;
+    width: 400px;
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 200px;
+    margin-top: 20px;
+    margin-right: 400px;
+    color: white;
+    height: 50px;
+    border-radius: 0px 0px 6px 6px;
     font-size: 2rem;
-    color: red;
-    position: relative;
-    bottom: 50px;
-    left: 350px;
+    color: white;
+    letter-spacing: 1px;
+    /*font-weight: bold;*/
+    background-color: var(--primary-accent);
+    border: 1px solid var(--text-light)
   }
 
-  .iconAltPos {
-    position: relative;
-    bottom: 80px;
+
+
+  .firstRow {
+    display: flex;
   }
+
+  /*.icon {*/
+  /*  font-size: 2rem;*/
+  /*  color: red;*/
+  /*  position: relative;*/
+  /*  bottom: 50px;*/
+  /*  left: 350px;*/
+  /*}*/
+  /**/
+  /*.iconAltPos {*/
+  /*  position: relative;*/
+  /*  bottom: 80px;*/
+  /*}*/
 
   ::placeholder {
     font-size: 1.5rem;
   }
 
-  ::content {
-    font-size: 2rem;
+  input:focus,
+  textarea:focus {
+    outline: var(--primary-accent);
+    border: 1px solid var(--primary-accent)
   }
+
 
 }
