@@ -1,21 +1,33 @@
 .container {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   font-family: 'Faustina';
 
   img {
-    width: 380px;
+    width: 420px;
     height: auto;
     border-radius: 10px;
   }
 
   h3 {
+    text-align: center;
     font-size: 3rem;
+    font-weight: bold;
   }
 
   ul {
+    margin-left: 10px;
+
+    h4 {
+      margin-top: 6px;
+      margin-bottom: 2px;
+      font-size: 2.2rem;
+    }
+
     li {
-      font-size: 2rem;
+      font-size: 1.6rem;
+      text-decoration: underline;
+      cursor: pointer;
     }
   }
 }
