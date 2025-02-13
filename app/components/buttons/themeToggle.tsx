@@ -1,4 +1,4 @@
-import { useTheme } from "../../ThemeContext.tsx";
+import { useTheme } from "../../ThemeContext";
 import "./themeToggle.css";
 
 export function ThemeToggle() {

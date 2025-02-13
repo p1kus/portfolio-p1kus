@@ -6,17 +6,21 @@ body {
   background-color: var(--background-color);
   font-family: var(--font-sans);
   font-size: 62.5%;
+  margin: 0;
+  padding: 0;
 }
 
 .dark {
   background-color: var(--background-dark-color);
-  color: white;
+  color: var(--text-dark);
 }
 
 .light {
   background-color: var(--background-color);
-  color: black;
+  color: var(--text-light);
 }
+
+
 
 :global(.dark) input {
   background-color: black;

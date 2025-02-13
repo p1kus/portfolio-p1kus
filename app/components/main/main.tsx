@@ -1,30 +1,51 @@
+import { Button } from "../buttons/button";
+import { Icon } from "@iconify/react";
 import ContactForm from "../contactForm/contactForm";
+import { HorizontalLine } from "../horizontalLine/horizontalLine";
 import { LogoSet } from "../logoSet/logoSet";
 import styles from "./main.module.css";
+import { About } from "../about/about";
 
 export function Main() {
   return (
     <main className={styles.main}>
-      <section className={styles.leftContainer}>
-        <div className={styles.leftContent}>
+      <section className={styles.mainHeaderContainer}>
+        <div className={styles.mainHeaderContent}>
           <h1>
-            Hello! <span>I'm Piotr</span>
+            <i>Piotr Popiołek</i>
           </h1>
-          <br></br>
-          <h2> I'm based in Lublin, Poland.</h2>
+          <h2></h2>
           <p>
-            I create modern websites, work with <br></br> graphic design, and
-            specialize in editing. <br></br> I'm all about the detail and workflow
-            optimisation.
+            Passionate about technology and various computer stuff.
           </p>
-          <LogoSet></LogoSet>
+          <p>
+            Exploring Web Development, Networking and System Administration.
+          </p>
+          <p>
+            Proficient in Adobe Creative Suite, with expertise in Photoshop, specializing in marketing materials and editing.
+          </p>
+          <p>
+
+          </p>
+          <div className={styles.buttonContainer}>
+            <Button label="See my projects" variant="outlined"></Button>
+            <Button label="Read my CV" variant="outlined" icon="mdi:arrow-up">
+            </Button>
+          </div>
         </div>
+        <HorizontalLine></HorizontalLine>
       </section>
-      <section className={styles.rightContainer}>
-        <div className={styles.leftContent}>
-          <ContactForm></ContactForm>
-          {/* <h2>What i'm currently working on:</h2> */}
-        </div>
+      <section>
+        <About></About>
+        <HorizontalLine></HorizontalLine>
+      </section>
+      <section>
+
+        <LogoSet></LogoSet>
+      </section>
+      <section>
+        <ContactForm></ContactForm>
+        <HorizontalLine></HorizontalLine>
       </section>
     </main >
   );

@@ -4,13 +4,16 @@
 
 :root {
   --font-sans: "Switzer";
-  --primary-accent: #40CB4F;
+  --font-serif: 'Faustina';
+  --primary-accent: #FFC700;
   --secondary-color: #cddc38;
-  --background-color: #ffffff;
-  --background-dark-color: #12111b;
+  --background-color: #FFF5F5;
+  --background-dark-color: #191825;
   --dark-accent: #171622;
   --border-grey: #e1e1e1;
   --nav-dark-color: #161622;
+  --text-light: #686D76;
+  --text-dark: #F1F5F9;
   --dark-text-color: #a7a9be;
   --dark-header-color: #fffffe;
   --sun-color: #f9d71c;
@@ -32,3 +35,8 @@ html {
   block-size: 100%;
   color-scheme: light;
 }
+
+
+h1 {}
+
+h1 h2 h3 {}

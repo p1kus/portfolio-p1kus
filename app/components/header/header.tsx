@@ -2,17 +2,14 @@ import { Clock } from "../clock/clock";
 import styles from "./header.module.css";
 import { ThemeToggle } from "../buttons/themeToggle";
 import { NavLink } from "react-router";
+import { LanguageToggle } from "../buttons/languageToggle";
 
 export function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.controls}>
         <ThemeToggle></ThemeToggle>
-        <ul>
-          <div className={styles.selected}></div>
-          <li>English</li>
-          <li>Polski</li>
-        </ul>
+        <LanguageToggle></LanguageToggle>
       </div>
       <div className={styles.locationWithTime}>
         <h3>Lublin, Poland</h3>

@@ -1,0 +1,24 @@
+button {
+  padding: 14px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  margin-top: 12px;
+  display: flex;
+  gap: 10px
+}
+
+
+.filled {
+  background-color: var(--primary-accent);
+}
+
+.outlined {
+  border: 2px solid var(--primary-accent);
+}
+
+.buttonIcon {
+  top: 1px;
+  color: var(--primary-accent);
+  font-size: 24px;
+  transform: rotate(45deg)
+}

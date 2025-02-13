@@ -18,6 +18,10 @@ export const links: Route.LinksFunction = () => [
     rel: "stylesheet",
     href: "https://fonts.cdnfonts.com/css/switzer",
   },
+  {
+    rel: "stylesheet",
+    href: "https://fonts.cdnfonts.com/css/faustina-2",
+  },
 ];
 
 export function Layout() {

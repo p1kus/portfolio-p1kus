@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  gap: 20px;
+  font-family: 'Faustina';
+
+  img {
+    width: 380px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  ul {
+    li {
+      font-size: 2rem;
+    }
+  }
+}

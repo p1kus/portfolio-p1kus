@@ -1,21 +1,40 @@
 main {
   display: flex;
-  justify-content: center;
-  flex-direction: row;
-  /*align-items: center;*/
-  height: 95vh;
+  /*justify-content: center;*/
+  flex-direction: column;
+  align-items: center;
   /*margin: 0 120px;*/
   margin-top: 100px;
 
-  .leftContainer {
-    width: 50dvw;
+  section {
+    /*height:95vh*/
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  h1,
+  p {
+    font-family: 'Faustina';
+  }
+
+  .buttonContainer {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .mainHeaderContainer {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /*align-items: center;*/
+
+
 
     h1 {
       font-size: 3.5rem;
       /*padding: 10px;*/
+      letter-spacing: 1px;
 
       span {
         color: var(--primary-accent);
@@ -27,16 +46,9 @@ main {
     }
 
     p {
-      font-size: 2.5rem;
+      font-size: 2rem;
+
     }
   }
 
-  .rightContainer {
-    width: 50dvw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-
-  }
 }
