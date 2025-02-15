@@ -1,13 +1,14 @@
 import { useTheme } from "../../ThemeContext";
+import styles from "./languageToggle.module.css"
 export function LanguageToggle() {
   const { language, setLanguage } = useTheme()
   return (
-    <ul>
+    <ul className={styles.languageButtons}>
       <li onClick={() => {
         setLanguage('en')
       }}>English</li>
       <li onClick={() => {
-        setLanguage('en')
+        setLanguage('pl')
       }}>Polski</li>
     </ul>
   );

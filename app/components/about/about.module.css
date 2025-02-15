@@ -4,8 +4,10 @@
   font-family: 'Faustina';
 
   img {
-    width: 420px;
+    max-width: 55%;
     height: auto;
+    object-fit: cover;
+    object-position: center right;
     border-radius: 10px;
   }
 
