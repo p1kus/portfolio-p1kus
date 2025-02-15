@@ -1,11 +1,11 @@
 import styles from "./toolkit.module.css"
-import section from "../sharedSection.module.css"
+import shared from "../sharedSection.module.css"
 import { LogoSet } from "../logoSet/logoSet"
 
 export function Toolkit() {
   return (
-    <div className={`${section.container} ${styles.toolkitContainer}`}>
-      <h3 className={section.sectionHeader}>Toolkit</h3>
+    <div className={`${shared.container} ${styles.toolkitContainer}`}>
+      <h3 className={shared.sectionHeader}>Toolkit</h3>
       <div className={styles.panelsWrapper}>
 
         <ul className={styles.leftPanel}>
@@ -35,6 +35,7 @@ export function Toolkit() {
           <li>Adobe Illustrator</li>
           <li>Adobe InDesign</li>
           <li>Adobe Premiere Pro</li>
+          <li>Adobe UXP Scripting</li>
           <h5>Office tools</h5>
           <li>Microsoft Word</li>
           <li>Microsoft Excel</li>

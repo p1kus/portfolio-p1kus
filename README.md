@@ -1,6 +1,4 @@
 # Welcome to my portfolio
-
-
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
 
 ## Tech Stack

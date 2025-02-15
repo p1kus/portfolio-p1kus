@@ -3,8 +3,11 @@ import styles from "./header.module.css";
 import { ThemeToggle } from "../buttons/themeToggle";
 import { NavLink } from "react-router";
 import { LanguageToggle } from "../buttons/languageToggle";
+import { useTheme } from "~/ThemeContext";
+
 
 export function Header() {
+  const { language } = useTheme();
   return (
     <header className={styles.header}>
       <div className={styles.controls}>

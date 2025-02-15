@@ -25,7 +25,7 @@ export function Main() {
           </p>
           <p>
             Proficient in Adobe Creative Suite, with expertise in Photoshop, specializing in marketing materials and editing.
-            <CurrentWorkText name='CS2ETV' link=""></CurrentWorkText>
+            {/* <CurrentWorkText name='CS2ETV' link=""></CurrentWorkText> */}
           </p>
           <p>
           </p>

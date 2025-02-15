@@ -4,11 +4,11 @@
   align-items: center;
   flex-wrap: wrap;
   margin-top: 10px;
-  max-width: 250px;
+  max-width: 260px;
 
   .icon {
     position: relative;
-    font-size: 58px;
+    font-size: 48px;
     /*margin-left: 12px;*/
     right: 38px;
     margin-top: 16px;

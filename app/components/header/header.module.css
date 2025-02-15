@@ -1,15 +1,14 @@
 header {
-
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  font-size: 1.80rem;
+  font-size: 2rem;
   height: 120px;
   padding: 0 70px;
   width: 100%;
   max-width: 1200px auto;
-  letter-spacing: 1px;
+  font-family: var(--font-serif);
 
   .controls {
     display: flex;

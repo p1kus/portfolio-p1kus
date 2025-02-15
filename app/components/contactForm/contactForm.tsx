@@ -1,6 +1,7 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import styles from "./contactForm.module.css";
+import shared from "../sharedSection.module.css"
 export default function ContactForm() {
   const [result, setResult] = React.useState("");
 
@@ -30,8 +31,8 @@ export default function ContactForm() {
 
   return (
     <div>
-      <form onSubmit={onSubmit}>
-        <h2>Get in touch!</h2>
+      <form onSubmit={onSubmit} className={`${styles.formElement} ${shared.fontFamily}`}>
+        <h2>Let's talk</h2>
         <div className={styles.firstRow}>
           <input className={styles.nameInput} type="text" name="name" required placeholder="Name" />
           {/* <Icon className={styles.icon} icon="mdi:required" /> */}
@@ -41,9 +42,9 @@ export default function ContactForm() {
         <textarea name="message" required placeholder="Your message" ></textarea>
         {/* <Icon className={`${styles.icon} ${styles.iconAltPos}`} icon="mdi:required" /> */}
         <div className={styles.buttonWrapper}>
-          <button type="submit">SUBMIT <Icon className={styles.icon} icon="ic:baseline-email"></Icon></button>
+          <button type="submit">Get in touch!</button>
         </div>
-
+        <a href="mailto:piotrpopiolekk@gmail.com" className={styles.emailParagraph}>piotrpopiolekk@gmail.com</a>
       </form>
       <span>{result}</span>
 

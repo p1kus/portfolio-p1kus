@@ -14,7 +14,9 @@ export function LogoSet() {
       <Icon className={styles.icon} icon="logos-adobe-photoshop" />
       <Icon className={styles.icon} icon="logos-adobe-premiere" />
       <Icon className={styles.icon} icon="logos-adobe-indesign" />
-      <Icon className={styles.icon} icon="" />
+      <Icon className={styles.icon} icon="devicon-bootstrap" />
+      <Icon className={styles.icon} icon="file-icons:virtualbox" />
+      <Icon className={styles.icon} icon="devicon-postman" />
     </div>
   )
 }
