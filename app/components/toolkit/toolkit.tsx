@@ -27,6 +27,7 @@ export function Toolkit() {
           <li>Unix Systems</li>
           <li>VIM</li>
           <li>Oracle VirtualBox</li>
+          <li>Postman</li>
         </ul>
         <ul className={styles.rightPanel}>
           <h4>Creative Tools & Other</h4>

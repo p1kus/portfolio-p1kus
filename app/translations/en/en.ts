@@ -3,23 +3,25 @@ import type { TranslationType } from "../types";
 
 
 export const en: TranslationType = {
-  navbar: {
-    home: 'Home',
-    demos: 'Demos',
-    about: 'About',
-    contact: 'Contact',
-  },
-  header: {
+  home: {
+    navbar: {
+      home: 'Home',
+      demos: 'Demos',
+      about: 'About',
+      contact: 'Contact',
+    },
+    header: {
 
-  },
-  profiles: {
+    },
+    profiles: {
 
-  },
-  toolkit: {
+    },
+    toolkit: {
 
-  },
-  contact: {
+    },
+    contact: {
 
+    }
   }
 
 }
