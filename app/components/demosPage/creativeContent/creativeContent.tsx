@@ -3,7 +3,7 @@ import chatspacePrev1 from "../../../assets/chatspace.png"
 import chatspacePrev2 from "../../../assets/chatspace2.png"
 import shared from "../../sharedSection.module.css"
 
-export default function DeveloperContent() {
+export default function CreativeContent() {
   return (
     <section>
       <div className={styles.projectSection}>

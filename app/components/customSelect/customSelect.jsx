@@ -26,7 +26,7 @@ const CustomSelect = ({ onValueChange }) => {
           <Select.Viewport className={styles.Viewport}>
             <Select.Group>
               <SelectItem value="developer">Developer</SelectItem>
-              <SelectItem value="graphic">Graphic projects (Adobe)</SelectItem>
+              <SelectItem value="graphic">Adobe Projects</SelectItem>
               <SelectItem value="creative">Creative Projects</SelectItem>
             </Select.Group>
           </Select.Viewport>

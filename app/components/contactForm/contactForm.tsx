@@ -1,8 +1,10 @@
 import React from "react";
-import { Icon } from "@iconify/react";
 import styles from "./contactForm.module.css";
 import shared from "../sharedSection.module.css"
-export default function ContactForm() {
+type ContactFormProps = {
+  alt?: string;
+}
+export default function ContactForm({ alt = "" }: ContactFormProps) {
   const [result, setResult] = React.useState("");
 
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -31,7 +33,7 @@ export default function ContactForm() {
 
   return (
     <div>
-      <form onSubmit={onSubmit} className={`${styles.formElement} ${shared.fontFamily}`}>
+      <form onSubmit={onSubmit} className={`${styles.formElement} ${shared.fontFamily} `}>
         <h2>Let's talk</h2>
         <div className={styles.firstRow}>
           <input className={styles.nameInput} type="text" name="name" required placeholder="Name" />
@@ -44,7 +46,7 @@ export default function ContactForm() {
         <div className={styles.buttonWrapper}>
           <button type="submit">Get in touch!</button>
         </div>
-        <a href="mailto:piotrpopiolekk@gmail.com" className={styles.emailParagraph}>piotrpopiolekk@gmail.com</a>
+        <a href="mailto:piotrpopiolekk@gmail.com" className={`${styles.emailParagraph} ${styles[alt]}`}>piotrpopiolekk@gmail.com</a>
       </form>
       <span>{result}</span>
 

@@ -4,6 +4,9 @@ import styles from "./demosPage.module.css"
 import CustomSelect from "../customSelect/customSelect"
 import { useState } from "react"
 import DeveloperContent from "./developerContent/developerContent"
+import GraphicsContent from "./graphicsContent/graphicsContent"
+import CreativeContent from "./creativeContent/creativeContent"
+import { Icon } from "@iconify/react/dist/iconify.js"
 export function DemosPage() {
   const [section, setSection] = useState('developer');
   const handleSelectChange = (value: string) => {
@@ -13,17 +16,16 @@ export function DemosPage() {
     <div className={`${shared.container} ${styles.container}`}>
       <section>
         <div className={styles.sectionHeader}>
-          <h2>Selected projects</h2>
+          <h2>Check out my work</h2>
+          {/* <HorizontalLine altStyle="alt"></HorizontalLine> */}
           <CustomSelect onValueChange={handleSelectChange}></CustomSelect>
-          {section === 'developer' && <h1>Developer</h1>}
-          {section === 'graphic' && <h1>Graphics</h1>}
-          {section === 'creative' && <h1>Creative</h1>}
         </div>
-
+        {/* <HorizontalLine altStyle="alt" /> */}
       </section>
       {section === 'developer' && <DeveloperContent />}
+      {section === 'graphic' && <GraphicsContent />}
+      {section === 'creative' && <CreativeContent />}
       <section>
-        <h2>Other projects</h2>
         <HorizontalLine></HorizontalLine>
       </section>
       <section>
