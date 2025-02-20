@@ -22,16 +22,23 @@
   }
 
   .projectImageContainer {
+    width: 55%;
+
     img {
       margin: 20px 0;
     }
   }
 
   .projectInfoContainer {
-    max-width: 45%;
+    width: 45%;
 
     h3 {
       margin: 12px 0;
+      font-weight: bold;
+    }
+
+    h4 {
+      font-size: 2.1rem;
       font-weight: bold;
     }
 

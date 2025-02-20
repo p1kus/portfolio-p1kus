@@ -3,7 +3,7 @@ import chatspacePrev1 from "../../../assets/chatspace.png"
 import chatspacePrev2 from "../../../assets/chatspace2.png"
 import shared from "../../sharedSection.module.css"
 
-export default function GraphicContent() {
+export default function GraphicsContent() {
   return (
     <section>
       <div className={styles.projectSection}>
@@ -12,8 +12,8 @@ export default function GraphicContent() {
           <img src={chatspacePrev2} alt="Screenshot of a project" className={shared.sectionImg} />
         </div>
         <div className={styles.projectInfoContainer}>
-          <h3>Chatspace</h3>
-          <p>Real-time chat application made for fun and to learn a thing about Sockets, built with:</p>
+          <h3>Hoodie mockups</h3>
+          <p>Hoodie mockups created in Adobe Photoshop</p>
           <h4>Tech Stack</h4>
           <ul>
             <li>HTML</li>
@@ -31,6 +31,60 @@ export default function GraphicContent() {
             <li>Online user list (refreshed on every socket on a new connection/disconnect)</li>
             <li>Typing indicators ("User is typing...")</li>
             <li>Connect/Disconnect alerts</li>
+          </ul>
+        </div>
+      </div>
+      <div className={styles.projectSection}>
+        <div className={styles.projectImageContainer}>
+          <img src={chatspacePrev1} alt="Screenshot of a project" className={shared.sectionImg} />
+          <img src={chatspacePrev2} alt="Screenshot of a project" className={shared.sectionImg} />
+        </div>
+        <div className={styles.projectInfoContainer}>
+          <h3>Automotive detailer visualization</h3>
+          <p>A visualization edit made for a car detailer, showcasing different tiers of service. Created in Adobe Photoshop</p>
+          <h4>Tech Stack</h4>
+          <ul>
+            <li>HTML</li>
+          </ul>
+          <h4>Key features</h4>
+          <ul>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <div className={styles.projectSection}>
+        <div className={styles.projectImageContainer}>
+          <img src={chatspacePrev1} alt="Screenshot of a project" className={shared.sectionImg} />
+          <img src={chatspacePrev2} alt="Screenshot of a project" className={shared.sectionImg} />
+        </div>
+        <div className={styles.projectInfoContainer}>
+          <h3>Stamp design</h3>
+          <p>A stamp design made from scratch, prepared and exported for printing</p>
+          <h4>Tech Stack</h4>
+          <ul>
+            <li>HTML</li>
+          </ul>
+          <h4>Key features</h4>
+          <ul>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <div className={styles.projectSection}>
+        <div className={styles.projectImageContainer}>
+          <img src={chatspacePrev1} alt="Screenshot of a project" className={shared.sectionImg} />
+          <img src={chatspacePrev2} alt="Screenshot of a project" className={shared.sectionImg} />
+        </div>
+        <div className={styles.projectInfoContainer}>
+          <h3>Logo Effect</h3>
+          <p>A stamp design made from scratch, prepared and exported for printing</p>
+          <h4>Tech Stack</h4>
+          <ul>
+            <li>HTML</li>
+          </ul>
+          <h4>Key features</h4>
+          <ul>
+            <li></li>
           </ul>
         </div>
       </div>

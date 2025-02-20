@@ -23,6 +23,8 @@ header {
   .locationWithTime {
     display: flex;
 
+    width: 220px;
+
     h3 {
       margin: 0 10px;
     }

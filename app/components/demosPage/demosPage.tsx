@@ -6,7 +6,6 @@ import { useState } from "react"
 import DeveloperContent from "./developerContent/developerContent"
 import GraphicsContent from "./graphicsContent/graphicsContent"
 import CreativeContent from "./creativeContent/creativeContent"
-import { Icon } from "@iconify/react/dist/iconify.js"
 export function DemosPage() {
   const [section, setSection] = useState('developer');
   const handleSelectChange = (value: string) => {

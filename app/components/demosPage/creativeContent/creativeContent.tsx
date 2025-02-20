@@ -1,6 +1,4 @@
 import styles from "../demosPage.module.css"
-import chatspacePrev1 from "../../../assets/chatspace.png"
-import chatspacePrev2 from "../../../assets/chatspace2.png"
 import shared from "../../sharedSection.module.css"
 
 export default function CreativeContent() {
@@ -8,12 +6,10 @@ export default function CreativeContent() {
     <section>
       <div className={styles.projectSection}>
         <div className={styles.projectImageContainer}>
-          <img src={chatspacePrev1} alt="Screenshot of a project" className={shared.sectionImg} />
-          <img src={chatspacePrev2} alt="Screenshot of a project" className={shared.sectionImg} />
         </div>
         <div className={styles.projectInfoContainer}>
-          <h3>Chatspace</h3>
-          <p>Real-time chat application made for fun and to learn a thing about Sockets, built with:</p>
+          <h3>Counter Strike Fragmovie</h3>
+          <p>A passion project, oldschool style Counter Strike fragmovie, made and edited in Adobe Premiere.</p>
           <h4>Tech Stack</h4>
           <ul>
             <li>HTML</li>
