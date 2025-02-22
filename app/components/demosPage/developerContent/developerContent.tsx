@@ -5,34 +5,16 @@ import ddc from "../../../assets/ddc.png"
 import shared from "../../sharedSection.module.css"
 import { HorizontalLine } from "~/components/horizontalLine/horizontalLine";
 import Project from "../project"
+import { ZoomableImage } from "../zoomableImage"
+import { images } from "~/utils/assets"
 
 export default function DeveloperContent() {
   return (
     <section>
-      <Project imageSrc={['.']} title="Chatspace" desc="Real-time chat application made for fun and to learn a thing about Sockets, built with:">
-        <h4>Tech Stack</h4>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Node.JS</li>
-          <li>Socket.IO</li>
-        </ul>
-        <h4>Key features</h4>
-        <ul>
-          <li>Web Sockets</li>
-          <li>User identification by socket</li>
-          <li>Username validation, with a check for duplicates</li>
-          <li>Usernames support with random colors</li>
-          <li>Online user list (refreshed on every socket on a new connection/disconnect)</li>
-          <li>Typing indicators ("User is typing...")</li>
-          <li>Connect/Disconnect alerts</li>
-        </ul>
-      </Project>
       <div className={styles.projectSection}>
         <div className={styles.projectImageContainer}>
-          <img src={chatspacePrev1} alt="Screenshot of a project" className={shared.sectionImg} />
-          <img src={chatspacePrev2} alt="Screenshot of a project" className={shared.sectionImg} />
+          <ZoomableImage imageId={1} image={images.chatspace.chatspacePreview1} alt="Screenshot of a web chat application" className=""></ZoomableImage>
+          <ZoomableImage imageId={2} image={images.chatspace.chatspacePreview2} alt="Screenshot of a web chat application" className=""></ZoomableImage>
         </div>
         <div className={styles.projectInfoContainer}>
           <h3>Chatspace</h3>
@@ -54,6 +36,30 @@ export default function DeveloperContent() {
             <li>Online user list (refreshed on every socket on a new connection/disconnect)</li>
             <li>Typing indicators ("User is typing...")</li>
             <li>Connect/Disconnect alerts</li>
+          </ul>
+        </div>
+      </div>
+      <HorizontalLine></HorizontalLine>
+      <div className={styles.projectSection}>
+        <div className={styles.projectImageContainer}>
+          <img src={chatspacePrev1} alt="Screenshot of a project" className={shared.sectionImg} />
+          <img src={chatspacePrev2} alt="Screenshot of a project" className={shared.sectionImg} />
+        </div>
+        <div className={styles.projectInfoContainer}>
+          <h3>Perfect Color</h3>
+          <p>Simple tool for checking WCAG Contrast Accessibility between foreground and background elements</p>
+          <h4>Tech Stack</h4>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>TypeScript</li>
+          </ul>
+          <h4>Key features</h4>
+          <ul>
+            <li>Randomly generates text/background color that complies with the WCAG requirements</li>
+            <li>Supports system color palette picker</li>
+            <li>React Router v7 routing</li>
+            <li>Web3Forms for Contact Form</li>
           </ul>
         </div>
       </div>

@@ -8,11 +8,11 @@ export default function CreativeContent() {
     <section>
       <div className={styles.projectSection}>
         <div className={styles.projectImageContainer}>
-          <div className="grid grid-cols-2 grid-rows-2">
+          <div className="grid grid-cols-2 grid-rows-2 gap-4">
             <ZoomableImage imageId={1} image={images.hoodies.hoodiePreview1} alt="Alt" className="w-full col-span-2"></ZoomableImage>
-            <ZoomableImage imageId={2} image={images.hoodies.hoodiePreview2} alt="Alt" className="sectionImg"></ZoomableImage>
-            <ZoomableImage imageId={3} image={images.hoodies.hoodiePreview3} alt="Alt" className="sectionImg"></ZoomableImage>
-            <ZoomableImage imageId={4} image={images.hoodies.hoodiePreview4} alt="Alt" className="sectionImg"></ZoomableImage>
+            <ZoomableImage imageId={2} image={images.hoodies.hoodiePreview2} alt="Alt" className="w-full aspect-[5/5] object-cover"></ZoomableImage>
+            <ZoomableImage imageId={3} image={images.hoodies.hoodiePreview3} alt="Alt" className="w-full aspect-[5/5] object-cover"></ZoomableImage>
+            <ZoomableImage imageId={4} image={images.hoodies.hoodiePreview4} alt="Alt" className="w-full aspect-[5/5] object-cover"></ZoomableImage>
           </div>
         </div>
         <div className={styles.projectInfoContainer}>

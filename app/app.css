@@ -32,6 +32,13 @@ body {
   background-color: var(--dark-accent);
 }
 
+.dark #submitBtn {
+
+  background-color: var(--text-dark);
+  border: 1px solid var(--text-light);
+  color: var(--text-light);
+}
+
 .dark .hr {
   /*background-color: var(--dark-accent);*/
   opacity: .2

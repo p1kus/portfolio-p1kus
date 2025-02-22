@@ -24,7 +24,7 @@ img {
 
 .imgZoom {
   max-height: calc(100vh - 220px);
-  animation: zoom 0.75s var(--easeOutCubic);
+  animation: zoom 0.65s var(--easeOutCubic);
 }
 
 

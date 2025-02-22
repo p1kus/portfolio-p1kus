@@ -44,7 +44,7 @@ export default function ContactForm({ alt = "" }: ContactFormProps) {
         <textarea name="message" required placeholder="Your message" ></textarea>
         {/* <Icon className={`${styles.icon} ${styles.iconAltPos}`} icon="mdi:required" /> */}
         <div className={styles.buttonWrapper}>
-          <button type="submit">Get in touch!</button>
+          <button type="submit" id="submitBtn">Get in touch!</button>
         </div>
         <a href="mailto:piotrpopiolekk@gmail.com" className={`${styles.emailParagraph} ${styles[alt]}`}>piotrpopiolekk@gmail.com</a>
       </form>
