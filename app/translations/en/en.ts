@@ -5,6 +5,7 @@ import type { TranslationType } from "../types";
 export const en: TranslationType = {
   home: {
     navbar: {
+      location: "Lublin, Poland",
       home: 'Home',
       demos: 'Demos',
       about: 'About',

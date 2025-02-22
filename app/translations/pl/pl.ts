@@ -6,6 +6,7 @@ export const pl: TranslationType = {
   home: {
 
     navbar: {
+      location: "Lublin, Polska",
       home: 'Strona główna',
       demos: 'Projekty',
       about: 'O mnie',
@@ -13,10 +14,10 @@ export const pl: TranslationType = {
     },
     header: {
       content: "",
-      projButton: "",
+      projButton: "Zobacz moje projekty",
     },
     profiles: {
-      heading: "Profiles",
+      heading: "Profile",
       devProfileH: "Dev",
       socialMediaH: "Media społecznościowe",
       certH: "Certyfikaty"

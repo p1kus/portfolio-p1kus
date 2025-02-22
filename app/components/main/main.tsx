@@ -6,9 +6,12 @@ import { LogoSet } from "../logoSet/logoSet";
 import styles from "./main.module.css";
 import { About } from "../about/about";
 import { Toolkit } from "../toolkit/toolkit";
-import { CurrentWorkText } from "../currentWorkText/currentWorkText";
+import { useTheme } from "~/ThemeContext";
+import { en } from "~/translations/en/en";
+import { pl } from "~/translations/pl/pl";
 
 export function Main() {
+  const { language } = useTheme();
   return (
     <main className={styles.main}>
       <section className={styles.mainHeaderContainer}>
@@ -16,21 +19,9 @@ export function Main() {
           <h1>
             <i>Piotr Popiołek</i>
           </h1>
-          <h2></h2>
-          <p>
-            Passionate about technology and various computer stuff.
-          </p>
-          <p>
-            Exploring Web Development, Networking and System Administration.
-          </p>
-          <p>
-            Proficient in Adobe Creative Suite, with expertise in Photoshop, specializing in marketing materials and editing.
-            {/* <CurrentWorkText name='CS2ETV' link=""></CurrentWorkText> */}
-          </p>
-          <p>
-          </p>
+          <p>{language == "en" ? en.home.header.content : pl.home.header.content}</p>
           <div className={styles.buttonContainer}>
-            <Button label="See my projects" variant="outlined" icon="mdi-chevron-right"></Button>
+            <Button label={language === "en" ? en.home.header.projButton : pl.home.header.projButton} variant="outlined" icon="mdi-chevron-right"></Button>
           </div>
         </div>
         <HorizontalLine></HorizontalLine>
@@ -41,7 +32,6 @@ export function Main() {
       </section>
       <section>
         <Toolkit></Toolkit>
-        {/* <LogoSet></LogoSet> */}
         <HorizontalLine></HorizontalLine>
       </section>
       <section>

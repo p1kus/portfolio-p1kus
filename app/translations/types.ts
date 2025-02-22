@@ -1,6 +1,7 @@
 export interface TranslationType {
   home: {
     navbar: {
+      location: string,
       home: string,
       demos: string,
       about: string,
