@@ -1,6 +1,5 @@
 import styles from "../demosPage.module.css"
-import chatspacePrev1 from "../../../assets/chatspace.png"
-import chatspacePrev2 from "../../../assets/chatspace2.png"
+import { images } from "~/utils/assets"
 import shared from "../../sharedSection.module.css"
 
 export default function GraphicsContent() {
@@ -8,8 +7,12 @@ export default function GraphicsContent() {
     <section>
       <div className={styles.projectSection}>
         <div className={styles.projectImageContainer}>
-          <img src={chatspacePrev1} alt="Screenshot of a project" className={shared.sectionImg} />
-          <img src={chatspacePrev2} alt="Screenshot of a project" className={shared.sectionImg} />
+          <div className="grid grid-cols-2 grid-rows-2 gap-4">
+            <img src={images.hoodies.hoodiePreview1} alt="Screenshot of a project" className={`w-full object-cover col-span-2 ${shared.sectionImg}`} />
+            <img src={images.hoodies.hoodiePreview2} alt="Screenshot of a project" className={`w-full aspect-[5/5] object-cover ${shared.sectionImg}`} />
+            <img src={images.hoodies.hoodiePreview3} alt="Screenshot of a project" className={`w-full aspect-[5/5] object-cover ${shared.sectionImg}`} />
+            <img src={images.hoodies.hoodiePreview4} alt="Screenshot of a project" className={`w-full aspect-[3/2] object-cover ${shared.sectionImg}`} />
+          </div>
         </div>
         <div className={styles.projectInfoContainer}>
           <h3>Hoodie mockups</h3>
@@ -22,22 +25,14 @@ export default function GraphicsContent() {
             <li>Node.JS</li>
             <li>Socket.IO</li>
           </ul>
-          <h4>Key features</h4>
-          <ul>
-            <li>Web Sockets</li>
-            <li>User identification by socket</li>
-            <li>Username validation, with a check for duplicates</li>
-            <li>Usernames support with random colors</li>
-            <li>Online user list (refreshed on every socket on a new connection/disconnect)</li>
-            <li>Typing indicators ("User is typing...")</li>
-            <li>Connect/Disconnect alerts</li>
-          </ul>
         </div>
       </div>
       <div className={styles.projectSection}>
         <div className={styles.projectImageContainer}>
-          <img src={chatspacePrev1} alt="Screenshot of a project" className={shared.sectionImg} />
-          <img src={chatspacePrev2} alt="Screenshot of a project" className={shared.sectionImg} />
+          <img src={images.automotiveVis.bmwPreview1} alt="Screenshot of a project" className={shared.sectionImg} />
+          <img src={images.automotiveVis.bmwPreview2} alt="Screenshot of a project" className={shared.sectionImg} />
+          <img src={images.automotiveVis.bmwPreview3} alt="Screenshot of a project" className={shared.sectionImg} />
+          <img src={images.automotiveVis.bmwPreview4} alt="Screenshot of a project" className={shared.sectionImg} />
         </div>
         <div className={styles.projectInfoContainer}>
           <h3>Automotive detailer visualization</h3>
@@ -54,8 +49,6 @@ export default function GraphicsContent() {
       </div>
       <div className={styles.projectSection}>
         <div className={styles.projectImageContainer}>
-          <img src={chatspacePrev1} alt="Screenshot of a project" className={shared.sectionImg} />
-          <img src={chatspacePrev2} alt="Screenshot of a project" className={shared.sectionImg} />
         </div>
         <div className={styles.projectInfoContainer}>
           <h3>Stamp design</h3>
@@ -72,8 +65,6 @@ export default function GraphicsContent() {
       </div>
       <div className={styles.projectSection}>
         <div className={styles.projectImageContainer}>
-          <img src={chatspacePrev1} alt="Screenshot of a project" className={shared.sectionImg} />
-          <img src={chatspacePrev2} alt="Screenshot of a project" className={shared.sectionImg} />
         </div>
         <div className={styles.projectInfoContainer}>
           <h3>Logo Effect</h3>

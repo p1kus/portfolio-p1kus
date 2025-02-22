@@ -1,0 +1,41 @@
+.imgTest {
+  width: 15%;
+}
+
+img {
+  cursor: pointer;
+}
+
+.zoomBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(1px);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.imgZoom {
+  max-height: calc(100vh - 220px);
+  animation: zoom 0.75s var(--easeOutCubic);
+}
+
+
+@keyframes zoom {
+  from {
+    transform: scale(0%);
+    opacity: 0
+  }
+
+  to {
+    transform: scale(100%);
+    opacity: 1
+  }
+}
