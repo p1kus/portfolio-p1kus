@@ -9,17 +9,25 @@ export interface TranslationType {
     header: {
       content: string,
       projButton: string,
-      cvButton: string,
     }
     profiles: {
       heading: string,
-      subheading: string,
+      devProfileH: string,
+      socialMediaH: string,
+      certH: string,
     }
     toolkit: {
-      heading: string,
-      subheading: string,
+      sectionHeading: string,
+      devHeading: string,
+      creativeHeading: string,
+      frontendSectionH: string,
+      backendSectionH: string,
+      systemSectionH: string,
+      graphicSectionH: string,
+      officeSectionH: string
     }
     contact: {
+      heading: string,
       nameValue: string,
       emailValue: string,
       messageValue: string,

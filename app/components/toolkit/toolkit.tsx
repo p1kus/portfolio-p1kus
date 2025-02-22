@@ -19,12 +19,13 @@ export function Toolkit() {
           <li>Vite</li>
           <li>RWD</li>
           <li>Bootstrap</li>
+          <li>Tailwind</li>
           <h5>Backend & Scripting</h5>
           <li>Node.JS</li>
-          <li>Bash Scripting</li>
+          <li>Bash</li>
           <h5>System & tooling</h5>
           <li>Git</li>
-          <li>Unix Systems</li>
+          <li>Unix OS</li>
           <li>VIM</li>
           <li>Oracle VirtualBox</li>
           <li>Postman</li>
@@ -36,7 +37,7 @@ export function Toolkit() {
           <li>Adobe Illustrator</li>
           <li>Adobe InDesign</li>
           <li>Adobe Premiere Pro</li>
-          <li>Adobe UXP Scripting</li>
+          <li>Adobe UXP</li>
           <h5>Office tools</h5>
           <li>Microsoft Word</li>
           <li>Microsoft Excel</li>

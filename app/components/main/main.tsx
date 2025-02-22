@@ -30,9 +30,7 @@ export function Main() {
           <p>
           </p>
           <div className={styles.buttonContainer}>
-            <Button label="See my projects" variant="outlined"></Button>
-            <Button label="Read my CV" variant="outlined" icon="mdi:arrow-up">
-            </Button>
+            <Button label="See my projects" variant="outlined" icon="mdi-chevron-right"></Button>
           </div>
         </div>
         <HorizontalLine></HorizontalLine>
