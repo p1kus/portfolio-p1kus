@@ -6,6 +6,7 @@ import { LanguageToggle } from "../buttons/languageToggle";
 import { useTheme } from "~/ThemeContext";
 import { en } from "~/translations/en/en";
 import { pl } from "~/translations/pl/pl";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 
 export function Header() {
@@ -33,6 +34,10 @@ export function Header() {
           </li>
         </ul>
       </nav>
+      <div className={styles.burgerMenu}>
+        {/* <p>Menu</p> */}
+        <Icon icon="charm:menu-meatball" className={styles.burgerIcon}></Icon>
+      </div>
     </header>
   );
 }

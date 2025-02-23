@@ -1,5 +1,6 @@
 import styles from "./button.module.css"
 import { Icon } from "@iconify/react";
+import { NavLink } from "react-router";
 type ButtonVariant = keyof typeof styles;
 
 interface ButtonProps {
@@ -9,7 +10,7 @@ interface ButtonProps {
   id: string,
 }
 export function Button({ label, variant, icon, id }: ButtonProps) {
-  return (<a href="" className={styles[variant]} id={id}>{label}
+  return (<NavLink to="/demos" className={styles[variant]} id={id}>{label}
     {icon && <Icon className={styles.buttonIcon} icon={icon} id={id}></Icon>}
-  </a >);
+  </NavLink >);
 }
