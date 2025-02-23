@@ -21,7 +21,7 @@ export function Main() {
           </h1>
           <p>{language == "en" ? en.home.header.content : pl.home.header.content}</p>
           <div className={styles.buttonContainer}>
-            <Button label={language === "en" ? en.home.header.projButton : pl.home.header.projButton} variant="outlined" icon="mdi-chevron-right"></Button>
+            <Button label={language === "en" ? en.home.header.projButton : pl.home.header.projButton} variant="filled" icon="mdi-chevron-right" id="MainHeadingBtn"></Button>
           </div>
         </div>
         <HorizontalLine></HorizontalLine>

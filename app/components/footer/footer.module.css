@@ -3,6 +3,8 @@ footer {
   justify-content: center;
   align-items: center;
   opacity: 0.6;
+  height: 80px;
+
   h5 {
     font-size: 1.5rem;
     padding: 10px;

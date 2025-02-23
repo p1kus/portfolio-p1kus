@@ -45,6 +45,12 @@
     font-style: italic;
   }
 
+  .listNoMargin {
+    li {
+      margin-left: 0;
+    }
+  }
+
 
   input,
   textarea,
@@ -66,7 +72,6 @@
       font-size: 1.6rem;
       padding: 2px;
       /*text-decoration: underline;*/
-      cursor: pointer;
     }
   }
 }

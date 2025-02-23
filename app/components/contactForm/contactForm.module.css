@@ -18,6 +18,18 @@
     font-family: var(--font-serif);
   }
 
+  ul {
+
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: flex-start;
+    gap: 30px;
+
+    li {
+      margin-left: 0;
+    }
+  }
+
   textarea {
     border: 1px solid var(--text-light);
     padding: 15px;
@@ -68,6 +80,12 @@
     background-color: var(--dark-accent);
     border: 1px solid var(--text-light);
     color: var(--text-dark);
+    cursor: pointer;
+    transition: opacity .2s;
+  }
+
+  button:hover {
+    opacity: .85;
   }
 
 

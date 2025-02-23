@@ -33,10 +33,20 @@ body {
 }
 
 .dark #submitBtn {
-
   background-color: var(--text-dark);
   border: 1px solid var(--text-light);
   color: var(--text-light);
+}
+
+.dark .filled {}
+
+.dark #MainHeadingBtn {
+  background-color: var(--text-dark);
+  color: var(--dark-accent);
+
+  .buttonIcon {
+    color: var(--dark-accent);
+  }
 }
 
 .dark .hr {

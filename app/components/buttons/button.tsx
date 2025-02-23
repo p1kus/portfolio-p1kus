@@ -6,9 +6,10 @@ interface ButtonProps {
   label: string;
   variant: ButtonVariant;
   icon?: string;
+  id: string,
 }
-export function Button({ label, variant, icon }: ButtonProps) {
-  return (<button className={styles[variant]}>{label}
-    {icon && <Icon className={styles.buttonIcon} icon={icon}></Icon>}
-  </button >);
+export function Button({ label, variant, icon, id }: ButtonProps) {
+  return (<a href="" className={styles[variant]} id={id}>{label}
+    {icon && <Icon className={styles.buttonIcon} icon={icon} id={id}></Icon>}
+  </a >);
 }

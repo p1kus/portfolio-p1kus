@@ -6,16 +6,20 @@ import { useState } from "react"
 import DeveloperContent from "./developerContent/developerContent"
 import GraphicsContent from "./graphicsContent/graphicsContent"
 import CreativeContent from "./creativeContent/creativeContent"
+import { useTheme } from "~/ThemeContext"
+import { en } from "~/translations/en/en"
+import { pl } from "~/translations/pl/pl"
 export function DemosPage() {
   const [section, setSection] = useState('developer');
   const handleSelectChange = (value: string) => {
     setSection(value);
   }
+  const { language } = useTheme();
   return (
     <div className={`${shared.container} ${styles.container}`}>
       <section>
         <div className={styles.sectionHeader}>
-          <h2>Check out my work</h2>
+          <h2>{language === "en" ? en.demos.heading : pl.demos.heading}</h2>
           {/* <HorizontalLine altStyle="alt"></HorizontalLine> */}
           <CustomSelect onValueChange={handleSelectChange}></CustomSelect>
         </div>

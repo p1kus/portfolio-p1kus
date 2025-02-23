@@ -23,13 +23,13 @@ export function Header() {
       <nav>
         <ul>
           <li>
-            <NavLink to="/">{language === "en" ? en.home.navbar.home : pl.home.navbar.home}</NavLink>
+            <NavLink to="/" className={styles.navLink}>{language === "en" ? en.home.navbar.home : pl.home.navbar.home}</NavLink>
           </li>
           <li>
-            <NavLink to="/demos">{language === "en" ? en.home.navbar.demos : pl.home.navbar.demos}</NavLink>
+            <NavLink to="/demos" className={styles.navLink}>{language === "en" ? en.home.navbar.demos : pl.home.navbar.demos}</NavLink>
           </li>
           <li>
-            <NavLink to="/contact">{language === "en" ? en.home.navbar.contact : pl.home.navbar.contact}</NavLink>
+            <NavLink to="/contact" className={styles.navLink}>{language === "en" ? en.home.navbar.contact : pl.home.navbar.contact}</NavLink>
           </li>
         </ul>
       </nav>

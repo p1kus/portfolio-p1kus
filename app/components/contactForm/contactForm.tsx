@@ -6,8 +6,9 @@ import { en } from "~/translations/en/en";
 import { pl } from "~/translations/pl/pl";
 type ContactFormProps = {
   alt?: string;
+  children?: React.ReactNode
 }
-export default function ContactForm({ alt = "" }: ContactFormProps) {
+export default function ContactForm({ alt = "", children }: ContactFormProps) {
   const { language } = useTheme();
   const [result, setResult] = React.useState("");
 
@@ -39,6 +40,7 @@ export default function ContactForm({ alt = "" }: ContactFormProps) {
     <div>
       <form onSubmit={onSubmit} className={`${styles.formElement} ${shared.fontFamily} `}>
         <h2>{language === "en" ? en.home.contact.heading : pl.home.contact.heading}</h2>
+        {children}
         <div className={styles.firstRow}>
           <input className={styles.nameInput} type="text" name="name" required placeholder={language === "en" ? en.home.contact.nameValue : pl.home.contact.nameValue} />
           <input className={styles.emailInput} type="email" name="email" required placeholder={language === "en" ? en.home.contact.emailValue : pl.home.contact.emailValue} />

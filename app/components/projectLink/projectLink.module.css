@@ -1,0 +1,12 @@
+.linkContainer {
+
+  margin-top: 30px;
+
+
+  a {
+    padding: 14px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-style: italic;
+  }
+}

@@ -34,6 +34,80 @@ export interface TranslationType {
       messageValue: string,
       submitButton: string
     }
-  }
+  },
+  demos: {
+    heading: string,
+    dev: {
+      chatspace: {
+        desc: string,
+        techStackHeading: string,
+        techStackContent?: string[],
+        featuresHeading: string,
+        featuresContent: string[],
+      },
+      perfectColor: {
+        desc: string,
+        techStackHeading: string,
+        techStackContent?: string[],
+        featuresHeading: string,
+        featuresContent: string[],
+
+      },
+      portfolio: {
+        desc: string,
+        techStackHeading: string,
+        techStackContent?: string[],
+        featuresHeading: string,
+        featuresContent: string[],
+      },
+      uxpToolkit: {
+        desc: string,
+        techStackHeading: string,
+        techStackContent?: string[],
+        featuresHeading: string,
+        featuresContent: string[],
+      },
+      wooCart: {
+        desc: string,
+        techStackHeading: string,
+        techStackContent?: string[],
+        featuresHeading: string,
+        featuresContent: string[],
+      }
+
+    },
+    graphic: {
+      hoodies: {
+        heading: string,
+        desc: string,
+      },
+      logoEffect: {
+        heading: string,
+        desc: string,
+      },
+      automotiveVis: {
+        heading: string,
+        desc: string,
+      },
+      watermark: {
+        heading: string,
+        desc: string,
+      }
+      stamp: {
+        heading: string,
+        desc: string,
+      },
+
+
+    },
+    creative: {
+      fragmovie: {
+        heading: string,
+        desc: string,
+      },
+
+    },
+  },
+
 
 }

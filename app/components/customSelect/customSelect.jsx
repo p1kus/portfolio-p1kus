@@ -47,6 +47,7 @@ const SelectItem = React.forwardRef(
         <Select.ItemText>{children}</Select.ItemText>
         <Select.ItemIndicator className={styles.ItemIndicator}>
           {/* <CheckIcon /> */}
+          <Icon icon="material-symbols:circle" className={styles.checkIcon}></Icon>
         </Select.ItemIndicator>
       </Select.Item>
     );

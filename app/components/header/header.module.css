@@ -41,7 +41,7 @@ header {
 
   li {
     display: inline-block;
-    padding: 6px;
+    cursor: pointer;
   }
 
 }
@@ -56,5 +56,41 @@ nav {
       display: inline-block;
       font-style: italic;
     }
+
+    .navLink {
+      padding: 8px;
+      transition: opacity .2s;
+    }
+
+    .navLink:hover {
+      opacity: .6;
+    }
+
   }
 }
+
+@media (max-width: 576px) {
+  header {
+    justify-content: flex-start;
+
+    .controls {
+      display: flex;
+      justify-content: flex-start;
+
+      li {
+        margin: 0 6px;
+      }
+    }
+
+    .locationWithTime {
+      display: none;
+    }
+
+  }
+
+  nav {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width:768px) {}
