@@ -41,8 +41,7 @@ export default function DeveloperContent() {
       <div className={styles.projectSection}>
         <div className={styles.projectImageContainer}>
           <div className="grid grid-cols-1 grid-rows-1 gap-10">
-            <ZoomableImage imageId={3} image={images.colorPerfect.colorPreview1} alt="Screenshot of a web chat application" className="w-full aspect-[4/3] object-cover"></ZoomableImage>
-            {/* <ZoomableImage imageId={4} image={images.colorPerfect.colorPreview2} alt="Screenshot of a web chat application" className="w-full aspect-[4/3] object-cover"></ZoomableImage> */}
+            <ZoomableImage imageId={3} image={images.colorPerfect.colorPreview1} alt="Screenshot of a WCAG Contrast tool app" className="w-full aspect-[4/3] object-cover"></ZoomableImage>
           </div>
         </div>
         <div className={styles.projectInfoContainer}>
@@ -95,8 +94,8 @@ export default function DeveloperContent() {
       <div className={styles.projectSection}>
         <div className={styles.projectImageContainer}>
           <div className="grid grid-cols-1 grid-rows-2 gap-10">
-            <ZoomableImage imageId={7} image={images.uxp.uxpPreview1} alt="Screenshot of a web chat application" className="w-full aspect-[4/3] object-cover"></ZoomableImage>
-            <ZoomableImage imageId={8} image={images.uxp.uxpPreview2} alt="Screenshot of a web chat application" className="w-full aspect-[4/3] object-cover"></ZoomableImage>
+            <ZoomableImage imageId={7} image={images.uxp.uxpPreview1} alt="Screenshot of a Photoshop plugin" className="w-full aspect-[4/3] object-cover"></ZoomableImage>
+            <ZoomableImage imageId={8} image={images.uxp.uxpPreview2} alt="Screenshot of a Photoshop plugin" className="w-full aspect-[4/3] object-cover"></ZoomableImage>
           </div>
         </div>
         <div className={styles.projectInfoContainer}>
@@ -120,7 +119,7 @@ export default function DeveloperContent() {
       <div className={styles.projectSection}>
         <div className={styles.projectImageContainer}>
           <div className="grid grid-cols-1 grid-rows-1 gap-0">
-            <ZoomableImage imageId={9} image={images.ddc.ddcPreview1} alt="Screenshot of a web chat application" className="w-full aspect-[4/3] object-cover"></ZoomableImage>
+            <ZoomableImage imageId={9} image={images.ddc.ddcPreview1} alt="Screenshot of a configurator form" className="w-full aspect-[4/3] object-cover"></ZoomableImage>
           </div>
         </div>
         <div className={styles.projectInfoContainer}>

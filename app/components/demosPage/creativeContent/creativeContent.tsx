@@ -10,7 +10,7 @@ export default function CreativeContent() {
       <div className={styles.projectSection}>
         <div className={styles.projectImageContainer}>
           <div className="grid grid-cols-1 grid-rows-1 gap-4">
-            <ZoomableImage imageId={1} image={images.wip.workInProgress} alt="Alt" className="w-full col-span-2"></ZoomableImage>
+            <ZoomableImage imageId={1} image={images.wip.workInProgress} alt="Work in progress image" className="w-full col-span-2"></ZoomableImage>
           </div>
         </div>
         <div className={styles.projectInfoContainer}>
@@ -30,7 +30,7 @@ export default function CreativeContent() {
       <div className={styles.projectSection}>
         <div className={styles.projectImageContainer}>
           <div className="grid grid-cols-1 grid-rows-1 gap-4">
-            <ZoomableImage imageId={1} image={images.wip.workInProgress} alt="Alt" className="w-full col-span-2"></ZoomableImage>
+            <ZoomableImage imageId={1} image={images.wip.workInProgress} alt="Work in progress image" className="w-full col-span-2"></ZoomableImage>
           </div>
         </div>
         <div className={styles.projectInfoContainer}>

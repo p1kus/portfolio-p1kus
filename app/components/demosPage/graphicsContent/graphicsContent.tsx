@@ -14,9 +14,9 @@ export default function GraphicsContent() {
       <div className={styles.projectSection}>
         <div className={styles.projectImageContainer}>
           <div className="grid grid-cols-2 grid-rows-2 gap-4">
-            <ZoomableImage imageId={1} image={images.hoodies.hoodiePreview1} alt="Alt" className="w-full col-span-2"></ZoomableImage>
-            <ZoomableImage imageId={2} image={images.hoodies.hoodiePreview2} alt="Alt" className="w-full aspect-[5/5] object-cover"></ZoomableImage>
-            <ZoomableImage imageId={3} image={images.hoodies.hoodiePreview3} alt="Alt" className="w-full aspect-[5/5] object-cover"></ZoomableImage>
+            <ZoomableImage imageId={1} image={images.hoodies.hoodiePreview1} alt="White hoodie mockup" className="w-full col-span-2"></ZoomableImage>
+            <ZoomableImage imageId={2} image={images.hoodies.hoodiePreview2} alt="White hoodie mockup" className="w-full aspect-[5/5] object-cover"></ZoomableImage>
+            <ZoomableImage imageId={3} image={images.hoodies.hoodiePreview3} alt="White hoodie mockup" className="w-full aspect-[5/5] object-cover"></ZoomableImage>
           </div>
         </div>
         <div className={styles.projectInfoContainer}>
@@ -41,9 +41,9 @@ export default function GraphicsContent() {
       <div className={styles.projectSection}>
         <div className={styles.projectImageContainer}>
           <div className="grid grid-cols-2 grid-rows-1 gap-4">
-            <ZoomableImage imageId={5} image={images.automotiveVis.bmwPreview4} alt="Alt" className="bg-white w-full col-span-2 object-cover"></ZoomableImage>
-            <ZoomableImage imageId={6} image={images.automotiveVis.lexPreview1} alt="Alt" className="bg-white w-full aspect-[8/5] object-cover"></ZoomableImage>
-            <ZoomableImage imageId={7} image={images.automotiveVis.porschPreview1} alt="Alt" className="bg-white w-full aspect-[8/5] object-cover"></ZoomableImage>
+            <ZoomableImage imageId={5} image={images.automotiveVis.bmwPreview4} alt="A car with certain parts highlighted" className="bg-white w-full col-span-2 object-cover"></ZoomableImage>
+            <ZoomableImage imageId={6} image={images.automotiveVis.lexPreview1} alt="A car with certain parts highlighted" className="bg-white w-full aspect-[8/5] object-cover"></ZoomableImage>
+            <ZoomableImage imageId={7} image={images.automotiveVis.porschPreview1} alt="A car with certain parts highlighted" className="bg-white w-full aspect-[8/5] object-cover"></ZoomableImage>
           </div>
         </div>
         <div className={styles.projectInfoContainer}>
@@ -55,10 +55,10 @@ export default function GraphicsContent() {
       <div className={styles.projectSection}>
         <div className={styles.projectImageContainer}>
           <div className="grid grid-cols-2 grid-rows-2 gap-4">
-            <ZoomableImage imageId={8} image={images.watermark.watermarkPreview1} alt="Alt" className="w-full object-contain"></ZoomableImage>
-            <ZoomableImage imageId={9} image={images.watermark.watermarkPreview2} alt="Alt" className="w-full object-contain"></ZoomableImage>
-            <ZoomableImage imageId={10} image={images.watermark.watermarkPreview3} alt="Alt" className="w-full object-contain"></ZoomableImage>
-            <ZoomableImage imageId={11} image={images.watermark.watermarkPreview4} alt="Alt" className="w-full object-contain"></ZoomableImage>
+            <ZoomableImage imageId={8} image={images.watermark.watermarkPreview1} alt="Image with a watermark" className="w-full object-contain"></ZoomableImage>
+            <ZoomableImage imageId={9} image={images.watermark.watermarkPreview2} alt="Image with watermark removed" className="w-full object-contain"></ZoomableImage>
+            <ZoomableImage imageId={10} image={images.watermark.watermarkPreview3} alt="Image with a watermark" className="w-full object-contain"></ZoomableImage>
+            <ZoomableImage imageId={11} image={images.watermark.watermarkPreview4} alt="Image with watermark removed" className="w-full object-contain"></ZoomableImage>
           </div>
         </div>
         <div className={styles.projectInfoContainer}>
@@ -69,7 +69,7 @@ export default function GraphicsContent() {
       <HorizontalLine></HorizontalLine>
       <div className={styles.projectSection}>
         <div className={styles.projectImageContainer}>
-          <ZoomableImage imageId={12} image={images.stamp.stampPreview1} alt="Alt" className="w-full object-contain"></ZoomableImage>
+          <ZoomableImage imageId={12} image={images.stamp.stampPreview1} alt="Stamp design" className="w-full object-contain"></ZoomableImage>
         </div>
         <div className={styles.projectInfoContainer}>
           <h3>{language === "en" ? en.demos.graphic.stamp.heading : pl.demos.graphic.stamp.heading}</h3>
