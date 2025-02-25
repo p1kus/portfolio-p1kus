@@ -3,8 +3,8 @@
 @import "tailwindcss";
 
 :root {
-  --font-sans: "Switzer", 'Helvetica neue', sans-serif;
-  --font-serif: 'Faustina', Verdana, serif;
+  --font-sans: "Lato", sans-serif;
+  --font-serif: 'Faustina', serif;
   --primary-accent: #FFC700;
   --secondary-color: #cddc38;
   --background-color: #faf8f7;
@@ -21,7 +21,6 @@
   --easeOutCubic: cubic-bezier(0.33, 1, 0.68, 1);
   --easeOutCirc: cubic-bezier(0, 0.55, 0.45, 1);
   --themeBtn-size: 36px;
-  font-display: swap;
 }
 
 * {

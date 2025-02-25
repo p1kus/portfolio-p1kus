@@ -11,41 +11,24 @@ import { preload } from "react-dom";
 export const links: Route.LinksFunction = () => [
   {
     rel: "preconnect",
-    href: "https://fonts.cdnfonts.com",
+    href: "https://fonts.googleapis.com",
+  },
+  {
+    rel: "preconnect",
+    href: "https://fonts.gstatic.com",
     crossOrigin: "anonymous",
   },
+
   {
     rel: "preload",
-    href: "./assets/map.webp",
-    as: "image",
-    crossOrigin: "anonymous",
+    href: "https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap",
+    as: "style",
   },
-  {
-    rel: "preload",
-    href: "./assets/mapMobile.webp",
-    as: "image",
-    crossOrigin: "anonymous",
-  },
-  {
-    rel: "preload",
-    href: "https://fonts.cdnfonts.com/css/switzer",
-    as: "font",
-    type: "font/woff2"
-  },
-  {
-    rel: "preload",
-    href: "https://fonts.cdnfonts.com/css/faustina-2",
-    as: "font",
-    type: "font/woff2"
-  },
+
   {
     rel: "stylesheet",
-    href: "https://fonts.cdnfonts.com/css/switzer",
-  },
-  {
-    rel: "stylesheet",
-    href: "https://fonts.cdnfonts.com/css/faustina-2",
-  },
+    href: "https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap",
+  }
 ];
 
 export function Layout() {
