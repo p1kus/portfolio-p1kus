@@ -1,7 +1,6 @@
 .toolkitContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   margin-top: 0;
 
@@ -13,14 +12,14 @@
 
   .panelsWrapper {
     display: flex;
-
+    width: 100%;
+    justify-content: center;
+    margin-left: 40px;
+    gap: 180px;
 
     ul {
-      padding: 0 75px;
 
       h4 {
-        flex-wrap: nowrap;
-        width: 300px;
         margin-bottom: 16px;
       }
 
@@ -41,12 +40,42 @@
 @media (max-width: 576px) {
   .toolkitContainer {
     display: flex;
+    justify-content: center;
+    width: 100%;
 
     .panelsWrapper {
       display: flex;
       flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: 10px;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        width: 240px;
+        /*align-items: center;*/
+      }
     }
   }
 }
 
-@media (min-width: 576px) and (max-width: 768px) {}
+@media (min-width: 576px) and (max-width: 768px) {
+  .toolkitContainer {
+    display: flex;
+    width: 100%;
+
+    .panelsWrapper {
+      display: flex;
+      /*flex-direction: column;*/
+      width: 100%;
+      gap: 20px;
+
+      ul {
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}

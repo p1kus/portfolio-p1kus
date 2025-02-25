@@ -122,3 +122,100 @@
   }
 
 }
+
+@media (max-width: 576px) {
+  .formElement {
+    display: flex;
+
+    .firstRow {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .nameInput,
+      .emailInput {
+        width: 100%;
+        border-radius: 6px;
+      }
+
+      .nameInput {
+        border-right: 1px solid var(--text-light);
+      }
+
+
+      .emailInput {}
+    }
+
+    input,
+    textarea {
+      margin-top: 17px;
+    }
+
+    .buttonWrapper {
+      width: 100%
+    }
+
+    button {
+      width: 100%;
+    }
+
+    textarea {
+      border: 1px solid var(--text-light);
+      border-radius: 6px;
+      width: 100%;
+    }
+
+    ul {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+  }
+
+}
+
+@media (max-width: 768px) {}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .formElement {
+    display: flex;
+
+    .firstRow {
+      display: flex;
+      /*flex-direction: column;*/
+      width: 100%;
+
+      .nameInput,
+      .emailInput {
+        margin-top: 20px;
+        width: 100%;
+      }
+
+      .nameInput {
+        width: 60%;
+      }
+
+
+      .emailInput {}
+    }
+
+
+    .buttonWrapper {
+      width: 100%
+    }
+
+    button {
+      width: 100%;
+    }
+
+    textarea {
+      width: 100%;
+    }
+
+    ul {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+  }
+}

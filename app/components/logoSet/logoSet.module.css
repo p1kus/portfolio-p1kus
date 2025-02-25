@@ -4,15 +4,27 @@
   align-items: center;
   flex-wrap: wrap;
   margin-top: 40px;
-  max-width: 380px;
+  max-width: 260px;
 
   .icon {
     position: relative;
     font-size: 50px;
-    /*margin-left: 12px;*/
-    right: 68px;
     margin-top: 16px;
-    padding: 8px
+    padding: 8px;
+    right: 45px;
   }
 
+}
+
+@media (max-width: 576px) {
+  .logoSetContainer {
+
+    .icon {
+      position: relative;
+      margin: 0;
+      font-size: 48px;
+      right: 20px;
+      padding: 8px;
+    }
+  }
 }

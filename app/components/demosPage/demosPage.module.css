@@ -22,7 +22,7 @@
 
   .projectSection {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     gap: 50px;
   }
 
@@ -54,13 +54,50 @@
     }
 
     ul {
+      list-style-type: circle;
+
       li {
-        margin-left: 10px;
+        margin-left: 22px;
         font-size: 1.5rem;
         padding: 4px;
       }
     }
   }
 
+
+}
+
+@media (max-width: 576px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    .sectionHeader {
+      margin-top: 20px;
+      display: flex;
+      padding: 0 12px;
+
+      h2 {
+        font-size: 3rem;
+      }
+    }
+
+    .projectSection {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5px;
+
+      .projectImageContainer {
+        width: 90%;
+      }
+
+      .projectInfoContainer {
+        width: 90%;
+      }
+    }
+
+  }
 
 }

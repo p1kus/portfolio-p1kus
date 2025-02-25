@@ -9,3 +9,9 @@
   margin: 10px 0;
   /*width: 100px;*/
 }
+
+@media (max-width: 576px) {
+  .horizontalLine {
+    margin: 25px 0;
+  }
+}

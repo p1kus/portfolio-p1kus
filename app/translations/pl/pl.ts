@@ -13,7 +13,7 @@ export const pl: TranslationType = {
       contact: 'Kontakt',
     },
     header: {
-      content: "Cześć! Jestem fanem technologii odkrywającym różne dziedziny IT, od tworzenia aplikacji internetowych, przez sieci do rozwiązań w chmurze. Doświadczony w składaniu i konfigurowaniu komputerów jak i w utrzymaniu sprzętu. Obyty w obsłudze programów Adobe, specjalizuje się w tworzeniu oraz edycji grafik marketingowych w Adobe Photoshop. Aktualnie przygotowuje się do certyfikacji Microsoft AZ-900",
+      content: "Cześć! Jestem fanem technologii odkrywającym różne dziedziny IT, od tworzenia aplikacji internetowych, przez sieci, do rozwiązań w chmurze. Doświadczony w składaniu i konfigurowaniu komputerów jak i w utrzymaniu sprzętu. Obyty w obsłudze programów Adobe, specjalizuję się w tworzeniu oraz edycji grafik marketingowych w Adobe Photoshop.",
       projButton: "Zobacz moje projekty",
     },
     profiles: {
@@ -26,7 +26,7 @@ export const pl: TranslationType = {
     toolkit: {
 
       sectionHeading: "Toolkit",
-      devHeading: "Development & Umiejętności IT",
+      devHeading: "Programowanie & IT",
       creativeHeading: "Programy graficzne i inne",
       frontendSectionH: "Frontend Development",
       backendSectionH: "Backend i skrypty",
@@ -47,7 +47,7 @@ export const pl: TranslationType = {
     heading: "Moje projekty",
     dev: {
       chatspace: {
-        desc: "Chat czasu rzeczywistego stworzony za pomocą Socket.IO aby nauczyć się pracy z Web Socketami.",
+        desc: "Chat czasu rzeczywistego stworzony za pomocą Socket.IO, aby nauczyć się pracy z Web Socketami.",
         techStackHeading: "Technologie",
         featuresHeading: "Kluczowe funkcje",
         featuresContent: ["Web Sockets", "Identyfikacja użytkownika przez Socket", "Walidacja nazw użytkowników, z obsługą duplikatów", "Wsparcie kolorów nazw użytkownika (Ala. Twitch)", "Lista użytkowników online (Odświeżana na połączeniu/rozłączeniu użytkownika)", "Wskaźnik pisania (User is typing...)", "Powiadomienia o dołączeniu, rozłączeniu użytkownika"]
@@ -88,12 +88,12 @@ export const pl: TranslationType = {
         desc: "Wizualizacje bluz stworzone w Adobe Photoshop. Logotypy i napisy wymagały odpowiedniego zwymiarowania w Adobe Illustrator oraz eksportu w jak najwyższej jakości."
       },
       logoEffect: {
-        heading: "Efekt logotypu",
-        desc: "Efekt logotypu stworzony w Adobe After Effects"
+        heading: "Animacja logotypu",
+        desc: "Animacja logotypu stworzona w Adobe After Effects."
       },
       automotiveVis: {
         heading: "Wizualizacja samochodowa",
-        desc: "Kilka wizualizacji stworzonych dla detailera samochodowego, przedstawiające różne poziomy oferowanych usług. Stworzone w Adobe Photoshop"
+        desc: "Kilka wizualizacji stworzonych dla detailera samochodowego, które przedstawiają różne poziomy oferowanych usług. Stworzone w Adobe Photoshop."
       },
       watermark: {
         heading: "Usuwanie znaku wodnego",

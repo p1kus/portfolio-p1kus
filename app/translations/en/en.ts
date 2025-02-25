@@ -13,7 +13,7 @@ export const en: TranslationType = {
     },
     header: {
 
-      content: "Tech enthusiast exploring different fields of IT, from Web Development and Networking to Cloud Computing. Experienced in building and configuring computers, as well as maintaining hardware. Proficient in Adobe software, specializing in marketing graphics creation and editing. Currently preparing for Microsoft AZ-900 certification.",
+      content: "Tech enthusiast exploring different fields of IT, from Web Development and Networking to Cloud Computing. Experienced in building and configuring computers, as well as maintaining hardware. Proficient in Adobe software, specializing in marketing graphics creation and editing.",
       projButton: "Take a look at my work",
 
     },
@@ -87,8 +87,8 @@ export const en: TranslationType = {
         desc: "Hoodie mockups created in Adobe Photoshop. Logos and Text required correct resizing in Adobe Illustrator and high quality export."
       },
       logoEffect: {
-        heading: "Logo Effect",
-        desc: "Stroke logo effect created in Adobe After Effects."
+        heading: "Logo Animation",
+        desc: "Stroke logo animation created in Adobe After Effects."
       },
       automotiveVis: {
         heading: "Automotive visualizations",

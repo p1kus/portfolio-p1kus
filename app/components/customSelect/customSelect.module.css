@@ -108,3 +108,11 @@
   color: var(--violet-11);
   cursor: default;
 }
+
+@media (max-width: 576px) {
+  .Trigger {
+    padding: 0 10px;
+    font-size: 1.4rem;
+    margin-left: 24px;
+  }
+}

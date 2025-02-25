@@ -15,10 +15,12 @@
 .sun-and-moon>.sun-beams {
   stroke: var(--icon-fill);
   stroke-width: 2px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
 .themeToggle:is(:hover, :focus-visible) .sun-and-moon>.sun-beams {
   stroke: var(--icon-fill-hover);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
 .dark .sun-and-moon>.sun {
