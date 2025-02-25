@@ -10,7 +10,7 @@ export function About() {
   preload(map, { as: "image" })
   return (
     <div className={styles.container}>
-      <img fetchPriority="high" src={map} alt="Map of Poland, with Lublin pinpointed on the map" />
+      <img fetchPriority="high" src={map} width="440" height="378.2" alt="Map of Poland, with Lublin pinpointed on the map" />
       <ul>
         <h3>{language === "en" ? en.home.profiles.heading : pl.home.profiles.heading}</h3>
         <h4>Dev</h4>

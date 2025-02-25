@@ -6,6 +6,7 @@ import "./app.css";
 import { Footer } from "./components/footer/footer";
 import { Header } from "./components/header/header";
 import { ThemeProvider, useTheme } from "./ThemeContext";
+import { preload } from "react-dom";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -13,6 +14,18 @@ export const links: Route.LinksFunction = () => [
     rel: "preconnect",
     href: "https://fonts.gstatic.com",
     crossOrigin: "anonymous",
+  },
+  {
+    rel: "preload",
+    href: "https://fonts.cdnfonts.com/css/switzer",
+    as: "font",
+    type: "font/woff2"
+  },
+  {
+    rel: "preload",
+    href: "https://fonts.cdnfonts.com/css/faustina-2",
+    as: "font",
+    type: "font/woff2"
   },
   {
     rel: "stylesheet",
@@ -45,6 +58,8 @@ export function Layout() {
 }
 function ThemedLayout() {
   const { theme } = useTheme();
+  preload("https://fonts.cdnfonts.com/css/switzer", { as: "font" }),
+    preload("https://fonts.cdnfonts.com/css/faustina-2", { as: "font" })
   return (<div className={theme === 'light' ? 'dark' : 'light'}>
     <Header></Header>
     <Outlet></Outlet>

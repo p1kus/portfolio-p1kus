@@ -3,8 +3,8 @@
 @import "tailwindcss";
 
 :root {
-  --font-sans: "Switzer";
-  --font-serif: 'Faustina';
+  --font-sans: "Switzer", "Verdana";
+  --font-serif: 'Faustina', "Verdana";
   --primary-accent: #FFC700;
   --secondary-color: #cddc38;
   --background-color: #faf8f7;
@@ -32,8 +32,3 @@ html {
   block-size: 100%;
   color-scheme: light;
 }
-
-
-h1 {}
-
-h1 h2 h3 {}
