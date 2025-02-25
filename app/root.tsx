@@ -7,6 +7,10 @@ import { Footer } from "./components/footer/footer";
 import { Header } from "./components/header/header";
 import { ThemeProvider, useTheme } from "./ThemeContext";
 import { preload } from "react-dom";
+import map from "./assets/map.webp";
+import mapMobile from "./assets/mapMobile.webp";
+preload(map, { as: "image" })
+preload(mapMobile, { as: "image" })
 
 export const links: Route.LinksFunction = () => [
   {
