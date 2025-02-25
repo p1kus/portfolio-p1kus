@@ -6,8 +6,6 @@ import "./app.css";
 import { Footer } from "./components/footer/footer";
 import { Header } from "./components/header/header";
 import { ThemeProvider, useTheme } from "./ThemeContext";
-import map from "./assets/map.webp"
-import mapMobile from "./assets/mapMobile.webp"
 
 
 export const links: Route.LinksFunction = () => [
@@ -31,18 +29,6 @@ export const links: Route.LinksFunction = () => [
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap",
   },
-  {
-    rel: "preload",
-    href: map,
-    as: "image",
-    type: "image/webp",
-  },
-  {
-    rel: "preload",
-    href: mapMobile,
-    as: "image",
-    type: "image/webp",
-  }
 ];
 
 export function Layout() {
