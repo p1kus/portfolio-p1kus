@@ -3,8 +3,8 @@
 @import "tailwindcss";
 
 :root {
-  --font-sans: "Switzer", Arial, sans-serif;
-  --font-serif: 'Faustina', Georgia, serif;
+  --font-sans: "Switzer", 'Helvetica neue', sans-serif;
+  --font-serif: 'Faustina', Verdana, serif;
   --primary-accent: #FFC700;
   --secondary-color: #cddc38;
   --background-color: #faf8f7;

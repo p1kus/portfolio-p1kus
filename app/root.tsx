@@ -28,20 +28,6 @@ export const links: Route.LinksFunction = () => [
   },
   {
     rel: "preload",
-    href: "https://fonts.cdnfonts.com/s/85792/Switzer-Regular.woff2",
-    as: "font",
-    type: "font/woff2",
-    crossOrigin: "anonymous",
-  },
-  {
-    rel: "preload",
-    href: "https://fonts.cdnfonts.com/s/107383/Faustina-Italic[wght].woff2",
-    as: "font",
-    type: "font/woff2",
-    crossOrigin: "anonymous",
-  },
-  {
-    rel: "preload",
     href: "https://fonts.cdnfonts.com/css/switzer",
     as: "font",
     type: "font/woff2"
