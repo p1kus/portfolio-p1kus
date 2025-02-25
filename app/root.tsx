@@ -40,11 +40,11 @@ export const links: Route.LinksFunction = () => [
   },
   {
     rel: "stylesheet",
-    // href: "https://fonts.cdnfonts.com/css/switzer",
+    href: "https://fonts.cdnfonts.com/css/switzer",
   },
   {
     rel: "stylesheet",
-    // href: "https://fonts.cdnfonts.com/css/faustina-2",
+    href: "https://fonts.cdnfonts.com/css/faustina-2",
   },
 ];
 
