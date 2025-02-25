@@ -6,6 +6,10 @@
     li {
       margin-left: 30px;
       text-decoration: underline;
+
+      b {
+        text-decoration: none;
+      }
     }
   }
 

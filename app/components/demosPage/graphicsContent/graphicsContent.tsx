@@ -1,12 +1,11 @@
-import styles from "../demosPage.module.css"
-import { images } from "~/utils/assets"
-import shared from "../../sharedSection.module.css"
-import { ZoomableImage } from "../zoomableImage";
 import { HorizontalLine } from "~/components/horizontalLine/horizontalLine";
-import vidPreview from "../../../assets/logoPreview2.mp4"
 import { useTheme } from "~/ThemeContext";
 import { en } from "~/translations/en/en";
 import { pl } from "~/translations/pl/pl";
+import { images } from "~/utils/assets";
+import vidPreview from "../../../assets/logoPreview2.mp4";
+import styles from "../demosPage.module.css";
+import { ZoomableImage } from "../zoomableImage";
 
 export default function GraphicsContent() {
   const { language } = useTheme();

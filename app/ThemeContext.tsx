@@ -21,7 +21,6 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     if (typeof window !== 'undefined') {
       const savedTheme = localStorage.getItem("theme");
       return savedTheme || DEFAULT_THEME;
-      // return 'light'
     }
     return DEFAULT_THEME;
   });

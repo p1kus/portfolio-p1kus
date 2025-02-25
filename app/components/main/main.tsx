@@ -1,8 +1,6 @@
 import { Button } from "../buttons/button";
-import { Icon } from "@iconify/react";
 import ContactForm from "../contactForm/contactForm";
 import { HorizontalLine } from "../horizontalLine/horizontalLine";
-import { LogoSet } from "../logoSet/logoSet";
 import styles from "./main.module.css";
 import { About } from "../about/about";
 import { Toolkit } from "../toolkit/toolkit";

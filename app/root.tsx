@@ -53,7 +53,6 @@ function ThemedLayout() {
 }
 
 export default function App() {
-  return
   <BrowserRouter>
     <Outlet></Outlet>
   </BrowserRouter>

@@ -1,9 +1,19 @@
+.formContainer {
+
+  text-align: center;
+
+  span {
+    text-align: center;
+    font-size: 1.5rem;
+    color: limegreen;
+  }
+}
+
 .formElement {
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  /*text-align: center;*/
 
 
   h2 {
@@ -74,7 +84,6 @@
     width: 600px;
     height: 50px;
     margin-top: 30px;
-    /*font-weight: bold;*/
     font-size: 2rem;
     border-radius: 6px 6px 6px 6px;
     background-color: var(--dark-accent);
@@ -94,18 +103,6 @@
     display: flex;
   }
 
-  /*.icon {*/
-  /*  font-size: 2rem;*/
-  /*  color: red;*/
-  /*  position: relative;*/
-  /*  bottom: 50px;*/
-  /*  left: 350px;*/
-  /*}*/
-  /**/
-  /*.iconAltPos {*/
-  /*  position: relative;*/
-  /*  bottom: 80px;*/
-  /*}*/
 
   ::placeholder {
     font-size: 1.5rem;
@@ -143,7 +140,6 @@
       }
 
 
-      .emailInput {}
     }
 
     input,
@@ -182,7 +178,6 @@
 
     .firstRow {
       display: flex;
-      /*flex-direction: column;*/
       width: 100%;
 
       .nameInput,
@@ -196,7 +191,6 @@
       }
 
 
-      .emailInput {}
     }
 
 

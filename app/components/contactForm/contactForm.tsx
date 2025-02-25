@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./contactForm.module.css";
-import shared from "../sharedSection.module.css"
 import { useTheme } from "~/ThemeContext";
 import { en } from "~/translations/en/en";
 import { pl } from "~/translations/pl/pl";
+import shared from "../sharedSection.module.css";
+import styles from "./contactForm.module.css";
 type ContactFormProps = {
   alt?: string;
   children?: React.ReactNode
@@ -31,13 +31,12 @@ export default function ContactForm({ alt = "", children }: ContactFormProps) {
       setResult("Form Submitted Successfully");
       currEvent.reset();
     } else {
-      console.log("Error", data);
       setResult(data.message);
     }
   };
 
   return (
-    <div>
+    <div className={styles.formContainer}>
       <form onSubmit={onSubmit} className={`${styles.formElement} ${shared.fontFamily} `}>
         <h2>{language === "en" ? en.home.contact.heading : pl.home.contact.heading}</h2>
         {children}
@@ -51,7 +50,7 @@ export default function ContactForm({ alt = "", children }: ContactFormProps) {
         </div>
         <a href="mailto:piotrpopiolekk@gmail.com" className={`${styles.emailParagraph} ${styles[alt]}`}>piotrpopiolekk@gmail.com</a>
       </form>
-      <span>{result}</span>
+      <span className={styles.result}>{result}</span>
 
     </div>
   );

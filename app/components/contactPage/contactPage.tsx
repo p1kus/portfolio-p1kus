@@ -11,10 +11,9 @@ export function ContactPage() {
       <section>
         <ContactForm alt="noEmail">
           <ul className={shared.listNoMargin}>
-            <li><a href="">piotrpopiolekk@gmail.com</a></li>
-            <li>Instagram</li>
-            <li>Discord</li>
-            <li>LinkedIn</li>
+            <li><a href="mailto:piotrpopiolekk@gmail.com">piotrpopiolekk@gmail.com</a></li>
+            <li><a href="https://www.instagram.com/pikuspp/">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/piotr-popiołek-90b1aa136/">LinkedIn</a></li>
           </ul>
         </ContactForm>
         <div className={styles.sectionHeader}>

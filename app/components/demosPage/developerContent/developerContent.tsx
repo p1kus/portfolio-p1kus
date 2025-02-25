@@ -1,11 +1,11 @@
-import styles from "../demosPage.module.css"
 import { HorizontalLine } from "~/components/horizontalLine/horizontalLine";
-import { ZoomableImage } from "../zoomableImage"
-import { images } from "~/utils/assets"
-import { ProjectLink } from "~/components/projectLink/projectLink"
+import { ProjectLink } from "~/components/projectLink/projectLink";
 import { useTheme } from "~/ThemeContext";
 import { en } from "~/translations/en/en";
 import { pl } from "~/translations/pl/pl";
+import { images } from "~/utils/assets";
+import styles from "../demosPage.module.css";
+import { ZoomableImage } from "../zoomableImage";
 
 export default function DeveloperContent() {
   const { language } = useTheme();
