@@ -52,8 +52,6 @@ export function Layout() {
 }
 function ThemedLayout() {
   const { theme } = useTheme();
-  preload("https://fonts.cdnfonts.com/css/switzer", { as: "font" }),
-    preload("https://fonts.cdnfonts.com/css/faustina-2", { as: "font" })
   return (<div className={theme === 'light' ? 'dark' : 'light'}>
     <Header></Header>
     <Outlet></Outlet>
