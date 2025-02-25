@@ -6,7 +6,9 @@ import "./app.css";
 import { Footer } from "./components/footer/footer";
 import { Header } from "./components/header/header";
 import { ThemeProvider, useTheme } from "./ThemeContext";
-import { preload } from "react-dom";
+import map from "./assets/map.webp"
+import mapMobile from "./assets/mapMobile.webp"
+
 
 export const links: Route.LinksFunction = () => [
   {
@@ -31,13 +33,13 @@ export const links: Route.LinksFunction = () => [
   },
   {
     rel: "preload",
-    href: "/assets/map.webp",
+    href: map,
     as: "image",
     type: "image/webp",
   },
   {
     rel: "preload",
-    href: "/assets/mapMobile.webp",
+    href: mapMobile,
     as: "image",
     type: "image/webp",
   }
@@ -72,9 +74,9 @@ function ThemedLayout() {
 }
 
 export default function App() {
-  <BrowserRouter>
+  return (
     <Outlet></Outlet>
-  </BrowserRouter>
+  );
 }
 
 
