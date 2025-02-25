@@ -27,7 +27,7 @@ export default function GraphicsContent() {
       <HorizontalLine></HorizontalLine>
       <div className={styles.projectSection}>
         <div className={styles.projectImageContainer}>
-          <video width="450" autoPlay loop className={styles.video}>
+          <video width="450" muted autoPlay loop className={styles.video}>
             <source src={vidPreview} type="video/mp4" />
           </video>
 

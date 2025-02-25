@@ -19,7 +19,7 @@ export function ZoomableImage({ imageId, image, alt, className }: ZoomableImageP
   return (
     <>
       <img src={image} alt={alt} onClick={() => zoom(imageId)} id={`${imageId}`} className={`${shared.sectionImg} ${className}`} />
-      {zoomId === imageId && (<div className={styles.zoomBox}>
+      {zoomId === imageId && (<div className={styles.zoomBox} onClick={() => zoom(0)}>
         <img src={image} alt={alt} onClick={() => zoom(0)} id={`${imageId}`} className={styles.imgZoom} />
       </div>)}
     </>

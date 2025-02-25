@@ -3,6 +3,8 @@ footer {
   justify-content: center;
   align-items: center;
   height: 80px;
+  font-family: var(--font-serif);
+  font-style: italic;
 
   h5 {
     font-size: 1.5rem;

@@ -13,7 +13,7 @@ export const pl: TranslationType = {
       contact: 'Kontakt',
     },
     header: {
-      content: "Cześć! Jestem fanem technologii odkrywającym różne dziedziny IT, od tworzenia aplikacji internetowych, przez sieci, do rozwiązań w chmurze. Doświadczony w składaniu i konfigurowaniu komputerów jak i w utrzymaniu sprzętu. Obyty w obsłudze programów Adobe, specjalizuję się w tworzeniu oraz edycji grafik marketingowych w Adobe Photoshop.",
+      content: "Cześć! Jestem fanem technologii odkrywającym różne dziedziny IT, od tworzenia aplikacji internetowych, przez sieci, do rozwiązań w chmurze. Posiadam doświadczenie ze sprzętem, w konfigurowaniu komputerów jak i w utrzymaniu. Dobrze posługuje się programami Adobe, specjalizuję się w tworzeniu oraz edycji grafik marketingowych w Adobe Photoshop.",
       projButton: "Zobacz moje projekty",
     },
     profiles: {

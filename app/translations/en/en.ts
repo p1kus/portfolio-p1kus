@@ -13,8 +13,8 @@ export const en: TranslationType = {
     },
     header: {
 
-      content: "Tech enthusiast exploring different fields of IT, from Web Development and Networking to Cloud Computing. Experienced in building and configuring computers, as well as maintaining hardware. Proficient in Adobe software, specializing in marketing graphics creation and editing.",
-      projButton: "Take a look at my work",
+      content: "Hello! I'm a tech enthusiast exploring different fields of IT, from Web Development and Networking to Cloud Computing. Experienced in building and configuring computers, as well as maintaining hardware. Proficient in Adobe software, specializing in marketing graphics creation and editing.",
+      projButton: "See my work",
 
     },
     profiles: {
