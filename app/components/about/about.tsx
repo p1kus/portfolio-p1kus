@@ -1,4 +1,5 @@
 import styles from "./about.module.css"
+import { preload } from "react-dom";
 import map from "../../assets/map.webp"
 import { useTheme } from "~/ThemeContext";
 import { en } from "~/translations/en/en";
@@ -6,6 +7,7 @@ import { pl } from "~/translations/pl/pl";
 
 export function About() {
   const { language } = useTheme();
+  preload(map, { as: "image" })
   return (
     <div className={styles.container}>
       <img fetchPriority="high" src={map} width="440" height="378.2" alt="Map of Poland, with Lublin pinpointed on the map" />

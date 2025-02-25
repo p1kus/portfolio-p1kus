@@ -21,11 +21,13 @@
   --easeOutCubic: cubic-bezier(0.33, 1, 0.68, 1);
   --easeOutCirc: cubic-bezier(0, 0.55, 0.45, 1);
   --themeBtn-size: 36px;
+  font-display: swap;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
+  font-display: swap;
 }
 
 html {
