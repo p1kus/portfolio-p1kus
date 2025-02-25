@@ -8,7 +8,7 @@ interface ThemeContextType {
 }
 
 export const ThemeContext = createContext<ThemeContextType>({
-  theme: "light",
+  theme: "dark",
   language: "en",
   toggleTheme: () => { },
   setLanguage: () => { },
@@ -45,7 +45,7 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     }
   }, [language])
   const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
+    setTheme(prevTheme => (prevTheme === "dark" ? "light" : "dark"));
   };
   return <ThemeContext.Provider value={{ theme, toggleTheme, language, setLanguage }}>{children}</ThemeContext.Provider>
 };
