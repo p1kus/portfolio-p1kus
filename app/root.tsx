@@ -9,10 +9,9 @@ import { ThemeProvider, useTheme } from "./ThemeContext";
 import { preload } from "react-dom";
 
 export const links: Route.LinksFunction = () => [
-  { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
     rel: "preconnect",
-    href: "https://fonts.gstatic.com",
+    href: "https://fonts.cdnfonts.com",
     crossOrigin: "anonymous",
   },
   {
