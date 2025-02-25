@@ -1,6 +1,7 @@
 import styles from "./about.module.css"
 import { preload } from "react-dom";
 import map from "../../assets/map.webp"
+import mapMobile from "../../assets/mapMobile.webp"
 import { useTheme } from "~/ThemeContext";
 import { en } from "~/translations/en/en";
 import { pl } from "~/translations/pl/pl";
@@ -8,9 +9,11 @@ import { pl } from "~/translations/pl/pl";
 export function About() {
   const { language } = useTheme();
   preload(map, { as: "image" })
+  preload(mapMobile, { as: "image" })
   return (
     <div className={styles.container}>
-      <img fetchPriority="high" src={map} width="440" height="378.2" alt="Map of Poland, with Lublin pinpointed on the map" />
+      <img fetchPriority="high" src={map} width="440" height="378.2" className={styles.imgDesktop} alt="Map of Poland, with Lublin pinpointed on the map" />
+      <img fetchPriority="high" src={mapMobile} width="305" height="262.2" className={styles.imgMobile} alt="Map of Poland, with Lublin pinpointed on the map" />
       <ul>
         <h3>{language === "en" ? en.home.profiles.heading : pl.home.profiles.heading}</h3>
         <h4>Dev</h4>
