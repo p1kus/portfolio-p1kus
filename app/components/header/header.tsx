@@ -55,9 +55,8 @@ export function Header() {
           <ThemeToggle></ThemeToggle>
         </div>
         <div className={styles.mobileLangToggle}>
-          <LanguageToggle className="langMobile"></LanguageToggle>
-          <Icon icon="flag:gb-4x3" className={styles.flagIcon}></Icon>
-          <Icon icon="flag:pl-4x3" className={styles.flagIcon}></Icon>
+          <LanguageToggle className="langMobile">
+          </LanguageToggle>
         </div>
         {/* <Footer></Footer> */}
       </div>

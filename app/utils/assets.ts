@@ -1,6 +1,6 @@
 export const images = {
   wip: {
-    workInProgress: new URL('../assets/workInProgress.jpeg', import.meta.url).href,
+    workInProgress: new URL('../assets/workInProgress.webp', import.meta.url).href,
   },
   chatspace: {
     chatspacePreview1: new URL('../assets/chatspace.webp', import.meta.url).href,

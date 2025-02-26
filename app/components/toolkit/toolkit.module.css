@@ -47,12 +47,18 @@
       flex-direction: column;
       align-items: center;
       width: 100%;
+      margin-left: 0;
       gap: 10px;
 
       ul {
         display: flex;
         flex-direction: column;
+        margin-left: 10px;
         width: 240px;
+
+        li {
+          margin-left: 6px;
+        }
       }
     }
   }

@@ -57,7 +57,7 @@ export function Layout() {
 }
 function ThemedLayout() {
   const { theme } = useTheme();
-  return (<div className={theme === 'dark' ? 'dark' : 'light'}>
+  return (<div className={theme === 'dark' ? 'light' : 'dark'}>
     <Header></Header>
     <Outlet></Outlet>
     <Footer></Footer>
