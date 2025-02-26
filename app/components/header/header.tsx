@@ -10,6 +10,7 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 import { useState } from "react";
 import { Footer } from "../footer/footer";
 import { HorizontalLine } from "../horizontalLine/horizontalLine";
+import Flags from "./flags";
 
 
 export function Header() {
@@ -55,8 +56,8 @@ export function Header() {
           <ThemeToggle></ThemeToggle>
         </div>
         <div className={styles.mobileLangToggle}>
-          <LanguageToggle className="langMobile">
-          </LanguageToggle>
+          <LanguageToggle className="langMobile"></LanguageToggle>
+          <Flags></Flags>
         </div>
         {/* <Footer></Footer> */}
       </div>
