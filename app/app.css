@@ -54,9 +54,8 @@ body {
 }
 
 .dark .hr {
-  opacity: .2
+  opacity: 0.2;
 }
-
 
 .light .tabs {
   .trigger {
@@ -65,8 +64,7 @@ body {
     &[data-state="active"] {
       background-color: var(--text-lightAlt);
       color: var(--text-dark);
-      box-shadow:
-        inset 0 -1px 0 0 var(--text-lightAlt),
+      box-shadow: inset 0 -1px 0 0 var(--text-lightAlt),
         0 1px 0 0 var(--text-lightAlt);
     }
   }
