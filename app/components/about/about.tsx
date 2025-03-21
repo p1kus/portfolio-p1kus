@@ -58,10 +58,12 @@ export function About() {
         <h4>
           {language === "en" ? en.home.profiles.certH : pl.home.profiles.certH}
         </h4>
-        <li>Cisco Networking Basics</li>
-        <li>Cisco Introduction to IoT</li>
-        <li>Cisco Introduction to Cybersecurity</li>
-        <li>Microsoft Azure AZ-900</li>
+        <li className={styles.certLiItem}>Cisco Networking Basics</li>
+        <li className={styles.certLiItem}>Cisco Introduction to IoT</li>
+        <li className={styles.certLiItem}>
+          Cisco Introduction to Cybersecurity
+        </li>
+        <li className={styles.certLiItem}>Microsoft Azure AZ-900</li>
       </ul>
     </div>
   );
