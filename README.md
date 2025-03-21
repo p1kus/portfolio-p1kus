@@ -4,8 +4,8 @@ This is my personal portfolio, available to see at piotrpopiolek.pl
 
 [Live](https://www.piotrpopiolek.pl)
 
-<img width="450" alt="image" src="https://github.com/user-attachments/assets/822f84ad-c06c-4965-a460-31ec2c07cc3d" /> 
-<img width="450" alt="image" src="https://github.com/user-attachments/assets/a127877e-a196-4158-a5f3-78bf2e932747" />
+<img width="450" height="300" alt="image" src="https://github.com/user-attachments/assets/822f84ad-c06c-4965-a460-31ec2c07cc3d" /> 
+<img width="450" height="300" alt="image" src="https://github.com/user-attachments/assets/a127877e-a196-4158-a5f3-78bf2e932747" />
 
 
 ## Tech Stack
